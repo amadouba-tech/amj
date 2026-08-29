@@ -7,11 +7,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X, Search, LifeBuoy  } from "lucide-react";
 import { NAV_ITEMS } from "@/data/content.js";
 
-import logoWordmark from "@/assets/logo-wordmark.png";
-import logoFeather from "@/assets/logo-feather.png";
-import logoMonogram from "@/assets/logo-monogram.png";
-
-
+import logo from "@/assets/logo.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -27,13 +23,8 @@ export default function Header() {
     <header className="site-header">
       <div className="header-inner">
       <Link href="/" className="brand" onClick={() => setMenuOpen(false)} aria-label="Art des Mots Justes — Accueil">
-  <Image src={logoFeather} alt="" aria-hidden="true" className="brand-feather" />
-  <div className="brand-stack">
-    <Image src={logoWordmark} alt="Art des Mots Justes" priority />
-    <Image src={logoMonogram} alt="" aria-hidden="true" className="brand-monogram" />
-    <span className="brand-tagline-big">Écrivain public</span>
-  </div>
-</Link>
+        <Image src={logo} alt="Art des Mots Justes — Écrivain public" className="brand-logo" priority />
+      </Link>
 
         <nav className="nav-desktop" aria-label="Navigation principale">
           {NAV_ITEMS.map((item) => (

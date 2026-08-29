@@ -3,7 +3,7 @@ import { Eyebrow, Tag, PrimaryButton, OutlineButton, AudienceCard } from "@/comp
 import DiscoverCarousel from "@/components/DiscoverCarousel.jsx";
 import { AUDIENCES, FONCTIONNEMENT_STEPS, DISCOVER_CARDS } from "@/data/content.js";
 import { IMAGES } from "@/data/images.js";
-import logoMonogram from "@/assets/logo-monogram.png";
+import logo from "@/assets/logo.png";
 
 export default function Accueil() {
   return (
@@ -79,7 +79,7 @@ export default function Accueil() {
             <OutlineButton href="/qui-suis-je">En savoir plus sur mon parcours</OutlineButton>
           </div>
           <div className="monogram-panel">
-            <Image src={logoMonogram} alt="AMJ" style={{ width: 140, height: "auto" }} />
+            <Image src={logo} alt="Art des Mots Justes" />
           </div>
         </div>
       </section>

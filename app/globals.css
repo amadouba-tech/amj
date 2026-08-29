@@ -80,18 +80,11 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
   border-bottom: 1px solid var(--gris-colore);
 }
 .header-inner {
-  max-width: 1400px; margin: 0 auto; padding: 20px 20px;
+  max-width: 1400px; margin: 0 auto; padding: 16px 20px;
   display: flex; align-items: center; justify-content: space-between; gap: 24px;
 }
-.brand { display: inline-flex; flex-direction: row; align-items: flex-start; gap: 6px; text-decoration: none; margin-right: 8px; }
-.brand-feather { height: 46px !important; width: auto !important; margin-top: 12px; }
-.brand-stack { display: inline-flex; flex-direction: column; align-items: center; gap: 2px; }
-.brand-stack img { height: 27px; width: auto; }
-.brand-monogram { height: 15px !important; width: auto !important; opacity: 0.95; }
-.brand-tagline-big {
-  font-size: 0.74rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase;
-  color: var(--terracotta); white-space: nowrap; margin-top: 2px;
-}
+.brand { display: inline-flex; align-items: center; text-decoration: none; margin-right: 8px; flex-shrink: 0; }
+.brand-logo { height: 96px; width: auto; max-width: min(420px, 72vw); object-fit: contain; }
 
 
 
@@ -128,6 +121,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 @media (min-width: 900px) {
   .nav-desktop { display: flex; }
   .menu-toggle { display: none; }
+  .brand-logo { height: 130px; max-width: 520px; }
 }
 
 /* ---------- footer ---------- */
@@ -181,7 +175,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
   display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px;
 }
 .footer-brand { display: flex; align-items: center; gap: 14px; }
-.footer-monogram { height: 46px; width: auto; }
+.footer-logo { height: 88px; width: auto; max-width: 360px; object-fit: contain; }
 .footer-title { font-family: var(--font-cormorant), serif; font-size: 1.25rem; }
 .footer-sub { font-size: 0.8rem; color: #C9CFD8; margin-top: 2px; }
 .footer-nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
@@ -310,7 +304,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
   display: flex; align-items: center; justify-content: center;
   background: var(--blanc-casse); border: 1px solid var(--gris-colore); border-radius: 20px; padding: 30px;
 }
-.monogram-panel img { width: 140px; }
+.monogram-panel img { width: min(100%, 420px); height: auto; }
 
 /* ---------- cta banner ---------- */
 .cta-banner { text-align: center; }

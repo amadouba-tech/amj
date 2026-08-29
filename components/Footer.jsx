@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Instagram, Facebook, Linkedin } from "lucide-react";
 import { NAV_ITEMS, AUDIENCES } from "@/data/content.js";
 import NewsletterForm from "./NewsletterForm.jsx";
-import logoMonogram from "@/assets/logo-monogram.png";
+import logo from "@/assets/logo.png";
 
 const LEGAL_LINKS = [
   { href: "/mentions-legales", label: "Mentions légales" },
@@ -53,7 +53,7 @@ export default function Footer() {
 
       <div className="footer-inner">
         <div className="footer-brand">
-          <Image src={logoMonogram} alt="AMJ" className="footer-monogram" />
+          <Image src={logo} alt="Art des Mots Justes" className="footer-logo" />
           <div>
             <div className="footer-title">Art des Mots Justes</div>
             <div className="footer-sub">Écrivain public — Yonne &amp; à distance</div>

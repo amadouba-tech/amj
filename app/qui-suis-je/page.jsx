@@ -23,10 +23,9 @@ export default function QuiSuisJe() {
             <Image
               src={IMAGES.quiSuisJePortrait}
               alt="Portrait de l&rsquo;écrivain public"
-              width={461}
-              height={1024}
+              fill
               priority
-              sizes="(max-width: 860px) 50vw, 190px"
+              sizes="(max-width: 860px) 100vw, 380px"
             />
           </div>
         </div>

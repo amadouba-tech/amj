@@ -197,7 +197,7 @@ export const QUI_SUIS_JE_INTRO = {
     "Pendant une trentaine d\'années, j\'ai développé mes compétences rédactionnelles au sein des collectivités territoriales pour des écrits allant du simple courrier administratif à la note de présentation d\'un projet structurant pour demande de subvention européenne, sans oublier les comptes rendus, rapports, argumentaires juridiques et autres documents traités au quotidien.",
     "Par ailleurs, mon investissement dans l\'univers associatif et culturel a permis de diversifier mon style d\'écriture en m\'orientant vers la création de textes pour le spectacle vivant. Je me suis également consacrée à d\'autres missions (création d\'un dossier de mécénat, statuts associatifs\u2026).",
     <>
-      Aujourd\'hui, je souhaite mettre mes compétences rédactionnelles au service des personnes ayant besoin d\'un
+      Aujourd'hui, je souhaite mettre mes compétences rédactionnelles au service des personnes ayant besoin d'un
       accompagnement pour des DEMARCHES ADMINISTRATIVES OU LA RÉDACTION DE <span className="intro-caps">VOS</span> ECRITS PERSONNELS OU PROFESSIONNELS.
     </>,
   ],

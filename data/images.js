@@ -1,4 +1,5 @@
 import heroAccueil from "@/assets/placeholders/hero-accueil.jpg";
+import quiSuisJePortrait from "@/assets/placeholders/qui-suis-je-portrait.jpg";
 
 function picsum(seed, width, height) {
   return `https://picsum.photos/seed/${seed}/${width}/${height}`;
@@ -6,6 +7,7 @@ function picsum(seed, width, height) {
 
 export const IMAGES = {
   heroAccueil,
+  quiSuisJePortrait,
   contactPhoto: picsum("amj-contact", 700, 900),
   cardParticuliers: picsum("amj-particuliers", 600, 500),
   cardAssociations: picsum("amj-associations", 600, 500),

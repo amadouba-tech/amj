@@ -199,6 +199,14 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .two-col { display: grid; grid-template-columns: 1fr; gap: 36px; align-items: center; }
 @media (min-width: 860px) { .two-col { grid-template-columns: 1.2fr 0.8fr; } }
 .page-intro { max-width: 720px; }
+.portrait-panel {
+  display: flex; justify-content: center;
+  border-radius: 20px; overflow: hidden;
+  border: 1px solid var(--gris-colore);
+  background: var(--blanc-casse);
+  box-shadow: 0 8px 28px rgba(47, 47, 47, 0.08);
+}
+.portrait-panel img { width: 100%; height: auto; display: block; object-fit: cover; }
 
 /* ---------- event-style hero (photo + content, façon paris.fr) ---------- */
 .event-hero {

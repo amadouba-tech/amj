@@ -1,5 +1,7 @@
+import Image from "next/image";
 import { Eyebrow, PageIntro, FeatherMark } from "@/components/ui.jsx";
 import { FORMATION, EXPERIENCE_GROUPS } from "@/data/content.js";
+import { IMAGES } from "@/data/images.js";
 
 export const metadata = {
   title: "Qui suis-je ?",
@@ -11,12 +13,22 @@ export default function QuiSuisJe() {
   return (
     <>
       <section className="section first">
-        <div className="section-inner">
+        <div className="section-inner two-col">
           <PageIntro
             eyebrow="Qui suis-je&nbsp;?"
             title="Un parcours au service des mots"
             lead="Une formation dédiée à l&rsquo;écriture publique et à la correction, complétée par plus de 25 ans d&rsquo;expérience professionnelle au service des collectivités et un engagement durable dans le domaine culturel."
           />
+          <div className="portrait-panel">
+            <Image
+              src={IMAGES.quiSuisJePortrait}
+              alt="Portrait de l&rsquo;écrivain public"
+              width={461}
+              height={1024}
+              priority
+              sizes="(max-width: 860px) 100vw, 380px"
+            />
+          </div>
         </div>
       </section>
 

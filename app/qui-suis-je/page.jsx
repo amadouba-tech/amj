@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { Eyebrow, PageIntro, FeatherMark } from "@/components/ui.jsx";
-import { FORMATION, EXPERIENCE_GROUPS } from "@/data/content.js";
+import { QUI_SUIS_JE_INTRO, FORMATION, EXPERIENCE_GROUPS } from "@/data/content.js";
 import { IMAGES } from "@/data/images.js";
 
 export const metadata = {
   title: "Qui suis-je ?",
   description:
-    "Formation d'écrivain public et de correcteur, plus de 25 ans au service des collectivités, et un engagement durable dans le domaine culturel.",
+    "Marie-José Sabard, écrivain public AMJ — compétences rédactionnelles au service des particuliers, associations et professionnels.",
 };
 
 export default function QuiSuisJe() {
@@ -14,15 +14,17 @@ export default function QuiSuisJe() {
     <>
       <section className="section first">
         <div className="section-inner two-col">
-          <PageIntro
-            eyebrow="Qui suis-je&nbsp;?"
-            title="Un parcours au service des mots"
-            lead="Une formation dédiée à l&rsquo;écriture publique et à la correction, complétée par plus de 25 ans d&rsquo;expérience professionnelle au service des collectivités et un engagement durable dans le domaine culturel."
-          />
+          <PageIntro eyebrow="Qui suis-je&nbsp;?" title={QUI_SUIS_JE_INTRO.title}>
+            <div className="intro-body">
+              {QUI_SUIS_JE_INTRO.paragraphs.map((p, i) => (
+                <p key={i}>{p}</p>
+              ))}
+            </div>
+          </PageIntro>
           <div className="portrait-panel">
             <Image
               src={IMAGES.quiSuisJePortrait}
-              alt="Portrait de l&rsquo;écrivain public"
+              alt="Portrait de Marie-José Sabard, écrivain public"
               fill
               priority
               sizes="(max-width: 860px) 100vw, 380px"

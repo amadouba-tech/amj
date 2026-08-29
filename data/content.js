@@ -188,11 +188,12 @@ export const PROFESSIONNELS = {
 
 export const FORMATION = [
   { text: "Formation d\u2019écrivain public au Centre national privé de formation à distance (CNFDI)" },
-  { text: "Stage d\u2019écrivain conseil au cabinet Françoise Peters (GREC), à Castelnau-le-Lez (34)" },
+  { text: "Stages d\u2019écrivain conseil au cabinet Françoise Peters (GREC), à Castelnau-le-Lez (34)" },
   { text: "Formation de correcteur au Centre d\u2019écriture et de communication (CEC) à Paris, avec Jacques Décourt, auteur d\u2019ouvrages sur la langue française et enseignant à l\u2019École supérieure de journalisme de Lille" },
   {
     text: "Licence Conception et mise en œuvre de projets culturels, université d\u2019Aix-Marseille",
     sub: [
+      <>Mémoire : <em>Musiques nomades</em>&nbsp;: tziganes, gitanes et jazz manouche</>,
       "Stage dans un théâtre (programmation et communication)",
       "Stage au service culturel / spectacle vivant d\u2019une communauté d\u2019agglomération",
     ],

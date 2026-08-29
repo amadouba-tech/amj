@@ -365,10 +365,12 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .callout-link { display: inline-flex; align-items: center; gap: 6px; color: var(--terracotta); font-size: 0.9rem; font-weight: 500; white-space: nowrap; }
 
 /* ---------- qui suis-je ---------- */
-.formation-list { display: flex; flex-direction: column; gap: 20px; max-width: 760px; }
+.formation-list { display: flex; flex-direction: column; gap: 18px; max-width: 760px; line-height: 1.44; }
 .formation-list li { display: flex; gap: 16px; }
-.formation-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--terracotta); margin-top: 8px; flex-shrink: 0; }
-.formation-list p { margin-bottom: 0; }
+.formation-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--terracotta); margin-top: 7px; flex-shrink: 0; }
+.formation-list p { margin-bottom: 0; line-height: 1.44; }
+.formation-list .feather-list { gap: 8px; margin-top: 11px; }
+.formation-list .feather-list li { line-height: 1.44; }
 
 .experience-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 12px; }
 @media (min-width: 900px) { .experience-grid { grid-template-columns: repeat(3, 1fr); } }

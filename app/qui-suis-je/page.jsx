@@ -26,7 +26,7 @@ export default function QuiSuisJe() {
               width={461}
               height={1024}
               priority
-              sizes="(max-width: 860px) 100vw, 380px"
+              sizes="(max-width: 860px) 50vw, 190px"
             />
           </div>
         </div>

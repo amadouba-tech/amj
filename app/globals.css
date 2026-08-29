@@ -205,6 +205,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
   line-height: 1.25; margin: 0 0 8px;
 }
 .intro-body p:last-child { margin-bottom: 0; }
+.intro-caps { text-transform: none; letter-spacing: normal; }
 .portrait-panel {
   position: relative;
   width: 100%;

@@ -187,7 +187,7 @@ export const PROFESSIONNELS = {
 };
 
 export const QUI_SUIS_JE_INTRO = {
-  title: "Marie-José Sabard — AMJ écrivain public",
+  title: "Marie-José Sabard — AMJ Écrivain public",
   paragraphs: [
     "Pendant une trentaine d\u2019années, j\u2019ai développé mes compétences rédactionnelles au sein des collectivités territoriales pour des écrits allant du simple courrier administratif à la note de présentation d\u2019un projet structurant pour demande de subvention européenne, sans oublier les comptes rendus, rapports, argumentaires juridiques et autres documents traités au quotidien.",
     "Par ailleurs, mon investissement dans l\u2019univers associatif et culturel a permis de diversifier mon style d\u2019écriture en m\u2019orientant vers la création de textes pour le spectacle vivant. Je me suis également consacrée à d\u2019autres missions (création d\u2019un dossier de mécénat, statuts associatifs\u2026).",

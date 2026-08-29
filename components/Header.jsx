@@ -1,0 +1,94 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { usePathname } from "next/navigation";
+import { Menu, X, Search, LifeBuoy  } from "lucide-react";
+import { NAV_ITEMS } from "@/data/content.js";
+
+import logoWordmark from "@/assets/logo-wordmark.png";
+import logoFeather from "@/assets/logo-feather.png";
+import logoMonogram from "@/assets/logo-monogram.png";
+
+
+
+export default function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
+  const pathname = usePathname();
+
+  function isActive(path) {
+    if (path === "/") return pathname === "/";
+    return pathname === path || pathname.startsWith(path + "/");
+  }
+
+  return (
+    <header className="site-header">
+      <div className="header-inner">
+      <Link href="/" className="brand" onClick={() => setMenuOpen(false)} aria-label="Art des Mots Justes — Accueil">
+  <Image src={logoFeather} alt="" aria-hidden="true" className="brand-feather" />
+  <div className="brand-stack">
+    <Image src={logoWordmark} alt="Art des Mots Justes" priority />
+    <Image src={logoMonogram} alt="" aria-hidden="true" className="brand-monogram" />
+    <span className="brand-tagline-big">Écrivain public</span>
+  </div>
+</Link>
+
+        <nav className="nav-desktop" aria-label="Navigation principale">
+          {NAV_ITEMS.map((item) => (
+            <Link
+              key={item.id}
+              href={item.path}
+              className={`nav-link ${isActive(item.path) ? "active" : ""}`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+
+        <div className="header-actions">
+          <button
+            className="icon-btn"
+            onClick={() => setSearchOpen((v) => !v)}
+            aria-label="Rechercher sur le site"
+            aria-expanded={searchOpen}
+          >
+            <Search size={19} strokeWidth={1.8} />
+          </button>
+          <Link href="/contact" className="icon-btn sos-btn" aria-label="Besoin d'aide rapidement — SOS">
+  <LifeBuoy size={19} strokeWidth={1.8} />
+  <span className="icon-btn-label">SOS</span>
+</Link>
+          <button className="menu-toggle" onClick={() => setMenuOpen((v) => !v)} aria-label="Ouvrir le menu">
+            {menuOpen ? <X size={22} /> : <Menu size={22} />}
+          </button>
+        </div>
+      </div>
+
+      {searchOpen && (
+        <div className="search-bar">
+          <div className="search-bar-inner">
+            <Search size={17} strokeWidth={1.8} />
+            <input type="search" placeholder="Rechercher une prestation, une page…" autoFocus />
+          </div>
+        </div>
+      )}
+
+      {menuOpen && (
+        <nav className="nav-mobile" aria-label="Navigation mobile">
+          {NAV_ITEMS.map((item) => (
+            <Link
+              key={item.id}
+              href={item.path}
+              className={`nav-link ${isActive(item.path) ? "active" : ""}`}
+              onClick={() => setMenuOpen(false)}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
+      )}
+    </header>
+  );
+}

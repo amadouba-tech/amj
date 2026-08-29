@@ -40,7 +40,7 @@ export default function Prestations() {
       <section className="section alt">
         <div className="section-inner">
           <Eyebrow>Fonctionnement</Eyebrow>
-          <h2>Commen je procède</h2>
+          <h2>Comment je procède ?</h2>
           {FONCTIONNEMENT_PARAGRAPHS.map((p, i) => <p key={i} className="paragraph">{p}</p>)}
           <div className="steps-grid compact">
             {FONCTIONNEMENT_STEPS.map((step, i) => {

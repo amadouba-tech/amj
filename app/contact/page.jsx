@@ -31,7 +31,7 @@ export default function Contact() {
         <div className="section-inner contact-grid">
           <InfoSidebar />
           <div className="contact-form-wrap">
-            <h2>Envoyer un message</h2>
+            <h2>Formulaire de contact</h2>
             <ContactForm />
           </div>
         </div>

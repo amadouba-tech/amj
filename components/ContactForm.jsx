@@ -60,7 +60,7 @@ export default function ContactForm() {
         <textarea name="message" rows={5} value={form.message} onChange={handleChange} required />
       </label>
       <button type="submit" className="btn-primary full">
-        Envoyer ma demande <Send size={16} />
+        Envoyez votre demande <Send size={16} />
       </button>
     </form>
   );

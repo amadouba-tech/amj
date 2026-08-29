@@ -5,7 +5,7 @@ import { MapPin, Calendar, Euro, Phone, Mail } from "lucide-react";
  * Réutilisable partout où un résumé pratique est utile (Contact, prestations...).
  *
  * La carte utilise OpenStreetMap (gratuit, sans clé API). Le bbox ci-dessous est
- * centré sur l'Yonne (Auxerre) à titre indicatif — à ajuster avec l'adresse
+ * centré sur Sens (Yonne) à titre indicatif — à ajuster avec l'adresse
  * exacte une fois disponible.
  */
 export default function InfoSidebar() {
@@ -39,8 +39,8 @@ export default function InfoSidebar() {
 
       <div className="info-map">
         <iframe
-          title="Localisation approximative — Yonne"
-          src="https://www.openstreetmap.org/export/embed.html?bbox=3.4%2C47.6%2C3.85%2C47.95&layer=mapnik&marker=47.8%2C3.57"
+          title="Localisation approximative — Sens, Yonne"
+          src="https://www.openstreetmap.org/export/embed.html?bbox=3.05%2C48.02%2C3.51%2C48.37&layer=mapnik&marker=48.197%2C3.283"
           loading="lazy"
         />
       </div>
@@ -53,7 +53,7 @@ export default function InfoSidebar() {
         </div>
         <div className="info-row compact">
           <Mail size={16} />
-          <span>Réponse sous quelques jours ouvrés</span>
+          <span>Réponse rapide</span>
         </div>
       </div>
     </aside>

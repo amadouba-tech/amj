@@ -1,6 +1,6 @@
 import {
   Users, Building2, Briefcase, Phone, FileText, MapPin,
-  GraduationCap, Mail, BookOpen, Heart, Landmark, Palette, Mic,
+  GraduationCap, Mail, Heart, Landmark, Palette, Mic,
 } from "lucide-react";
 import { IMAGES } from "./images.js";
 
@@ -63,10 +63,23 @@ export const FONCTIONNEMENT_STEPS = [
 ];
 
 export const TARIFS_INDICATIFS = [
-  { label: "Patine (en complément)", price: "20\u00A0€" },
-  { label: "Dose supplémentaire de produit", price: "15\u00A0€" },
-  { label: "Soin profond & massage", price: "15\u00A0€" },
-  { label: "Soin botox en complément d\u2019un forfait", price: "50\u00A0€" },
+  " Lettres, démarches administratives, constitution de dossiers administratifs : 30 €, ramené à 20 € pour un courrier simple",
+  "CV : 30 € ; lettre de motivation 30 € ; CV + lettre de motivation : 50 €",
+  "Permanence d'écrivain public : 40 € de l'heure",
+  "Rédaction ou correction des pièces de dossiers pour professionnels : 40 € de l'heure",
+  "Documents de communication, outils de promotion du secteur culturel : 40 € de l'heure, ramené à  un forfait de 25 € pour les documents simples ",
+  "Discours : 20 € la page",
+  "Ecrits littéraires : biographies, récits de vie, portraits de personnes méritantes, monographies… :  soit à l'heure d'entretien facturée 100 €, soit   20 € / 1 500 à       2 000 signes1.    Le tarif inclut les enregistrements, la saisie du document, les corrections et la livraison du papier,  sur clé USB ou par e-mail.",
+  "Correction simple (orthographe, grammaire, typographie) : 5 € / 1 500 signes1",
+  "Correction approfondie, avec mise en page : 7 € / 1 500 signes1",
+  "Correction et réécriture : 10 € / 1 500 signes1",
+  "Saisie :  6 € / 1 500 signes1",
+  "Saisie et mise en page : 8 € / 1 500 signes1",
+  "Autres travaux : 40 € de l'heure.",
+  "Réduction de 10 % pour les demandeurs d'emploi et étudiants, sur justificatif.",
+  "Devis gratuit. Il est obligatoire à partir de 100 €. Si vous me confiez des travaux longs, les devis seront ajustés.",
+  " Déplacement gratuit dans un rayon de 20 km. Au-delà, il sera facturé à 0,50 € / km puis tarif dégressif pour les distances >100 km. ",
+  "Espaces comprises. Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caractères Times New Roman 12 ou Calibri 12)",
 ];
 
 export const FONCTIONNEMENT_PARAGRAPHS = [
@@ -108,12 +121,12 @@ export const PARTICULIERS = {
       title: <em>Vos discours et autres écrits personnels</em>,
       text: [
         <em>Vous êtes touché par un évènement concernant vos proches et vous désirez le marquer d&rsquo;une pierre blanche.</em>,
+      ],
+      items: [
         <> <strong>Discours</strong> à l&rsquo;occasion d&rsquo;un mariage, un départ en retraite, la naissance d&rsquo;un enfant, des retrouvailles, une éloge funèbre&hellip;</>,
       ],
-      items: [],
     },
     {
-      icon: BookOpen,
       title: "Des histoires à raconter\u2026 transmettre ses souvenirs",
       text: "Votre activité, professionnelle ou amateure, est singulière comme votre vie, ou plutôt quelques moments de vie particulièrement marquants. Je saurai vous écouter attentivement pour restituer et mettre en valeur ces épisodes mémorables.",
       items: [
@@ -185,7 +198,7 @@ export const PROFESSIONNELS = {
     ],
   },
   artistique: {
-    title: "Artistes et organismes culturels",
+    title: "Artistes et structures culturelles",
     icon: Palette,
     intro: [
       "Ces prestations s\u2019adressent aux artistes, professeurs d\u2019enseignement artistique, structures culturelles (conservatoires de musique, danse et théâtre\u00A0; établissements dédiés au spectacle vivant, au patrimoine, aux arts visuels), et maisons d\u2019édition.",

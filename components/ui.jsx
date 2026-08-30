@@ -75,7 +75,9 @@ export function ServiceBlock({ section }) {
   const Icon = section.icon;
   return (
     <div className="service-block">
-      <div className="service-icon"><Icon size={20} strokeWidth={1.6} /></div>
+      {Icon && (
+        <div className="service-icon"><Icon size={20} strokeWidth={1.6} /></div>
+      )}
       <div className="service-body">
         <h3>{section.title}</h3>
         {Array.isArray(section.text) ? (

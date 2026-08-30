@@ -20,11 +20,10 @@ export default function Tarifs() {
           prendre le temps de comprendre votre besoin avant de vous proposer un prix juste et transparent.
         </p>
         <ul className="feather-list tarif-list">
-          {TARIFS_INDICATIFS.map((item, i) => (
+          {TARIFS_INDICATIFS.map((text, i) => (
             <li key={i}>
               <FeatherMark size={13} />
-              <span className="tarif-label">{item.label}</span>
-              <span className="tarif-price">{item.price}</span>
+              <span>{text}</span>
             </li>
           ))}
         </ul>

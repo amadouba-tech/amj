@@ -1,5 +1,5 @@
-import { PageIntro, PrimaryButton } from "@/components/ui.jsx";
-import { FONCTIONNEMENT_STEPS } from "@/data/content.js";
+import { PageIntro, PrimaryButton, FeatherMark } from "@/components/ui.jsx";
+import { FONCTIONNEMENT_STEPS, TARIFS_INDICATIFS } from "@/data/content.js";
 
 export const metadata = {
   title: "Tarifs",
@@ -19,6 +19,15 @@ export default function Tarifs() {
           Chaque demande est différente, chaque tarif l&rsquo;est donc aussi. Plutôt qu&rsquo;une grille figée, je préfère
           prendre le temps de comprendre votre besoin avant de vous proposer un prix juste et transparent.
         </p>
+        <ul className="feather-list tarif-list">
+          {TARIFS_INDICATIFS.map((item, i) => (
+            <li key={i}>
+              <FeatherMark size={13} />
+              <span className="tarif-label">{item.label}</span>
+              <span className="tarif-price">{item.price}</span>
+            </li>
+          ))}
+        </ul>
         <div className="steps-grid">
           {FONCTIONNEMENT_STEPS.map((step, i) => {
             const Icon = step.icon;

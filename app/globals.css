@@ -356,6 +356,10 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .feather-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.94rem; }
 .feather-list.nested { margin-top: 8px; margin-left: 4px; }
 .feather-list li span { flex: 1; }
+.tarif-list { margin: 24px 0 36px; max-width: 560px; }
+.tarif-list li { align-items: center; }
+.tarif-list .tarif-label { flex: 1; }
+.tarif-list .tarif-price { flex: 0; font-weight: 500; white-space: nowrap; }
 
 .sub-audience { margin-top: 40px; padding-top: 36px; border-top: 1px solid var(--gris-colore); }
 .sub-audience:first-of-type { margin-top: 20px; }

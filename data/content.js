@@ -62,6 +62,13 @@ export const FONCTIONNEMENT_STEPS = [
   },
 ];
 
+export const TARIFS_INDICATIFS = [
+  { label: "Patine (en complément)", price: "20\u00A0€" },
+  { label: "Dose supplémentaire de produit", price: "15\u00A0€" },
+  { label: "Soin profond & massage", price: "15\u00A0€" },
+  { label: "Soin botox en complément d\u2019un forfait", price: "50\u00A0€" },
+];
+
 export const FONCTIONNEMENT_PARAGRAPHS = [
   "Toute demande émise par un particulier ou un professionnel nécessite un entretien téléphonique ou en présentiel, afin de définir précisément vos besoins. Art des Mots Justes adapte ses prestations pour répondre au plus près à la demande formulée. L\u2019entretien et le devis sont gratuits.",
   "Le fonctionnement reste souple\u00A0: il est possible d\u2019organiser des rencontres ou de travailler à distance.",

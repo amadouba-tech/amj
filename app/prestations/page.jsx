@@ -14,23 +14,30 @@ export default function Prestations() {
         <div className="section-inner">
           <PageIntro
             eyebrow="Des prestations pour vous"
-            title="Des services gradués, sur mesure"
-            lead="Art des Mots Justes vous propose des services gradués, sur mesure, en fonction de vos besoins&nbsp;: de la simple correction à la réécriture complète de vos écrits."
+            title="Des services gradués, sur mesure, en fonction de vos besoins"
+            lead=""
           />
 
           <div className="mini-cards">
             <div className="mini-card">
               <FeatherMark size={18} />
               <div>
-                <h4>Correction</h4>
-                <p>Relecture, orthographe, grammaire, syntaxe et mise en forme de vos documents existants.</p>
+                <h4>RELECTURE ET CORRECTION</h4>
+                <p>Ne vous posez plus de questions su la manière de rédiger vos textes.Je relis vos écrits et assure la correction de l'orthographe, la grammaire, la syntaxe, voire la mise en forme de vos documents .</p>
               </div>
             </div>
             <div className="mini-card">
               <FeatherMark size={18} color="var(--bleu-gris)" />
               <div>
-                <h4>Réécriture</h4>
-                <p>Une reformulation complète, pour donner à vos écrits la clarté et le ton qu&rsquo;ils méritent.</p>
+                <h4>Réécriture, réformulation de textes</h4>
+                <p>On se situe entre la correstion et la rédaction.La Réécriture vise à retravailler votre écrit afin d'en améliorer le style rédactionnel.</p>
+              </div>
+            </div>
+            <div className="mini-card">
+              <FeatherMark size={18} color="var(--bleu-gris)" />
+              <div>
+                <h4>REDACTION DE TEXTES</h4>
+                <p>Adieu la page blanche ! j'assure la rédaction de tous vos écrits : CV, lettre de motivation, lettres administratives, écrits professionnels, récits de vie, monographies, discours  etc.</p>
               </div>
             </div>
           </div>

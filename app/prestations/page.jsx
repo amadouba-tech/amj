@@ -1,5 +1,32 @@
+import Image from "next/image";
 import { Eyebrow, PageIntro, AudienceCard, FeatherMark } from "@/components/ui.jsx";
 import { AUDIENCES, FONCTIONNEMENT_STEPS, FONCTIONNEMENT_PARAGRAPHS } from "@/data/content.js";
+import { IMAGES } from "@/data/images.js";
+
+const PRESTATION_SERVICES = [
+  {
+    title: "RELECTURE ET CORRECTION",
+    text: "Ne vous posez plus de questions sur la manière de rédiger vos textes. Je relis vos écrits et assure la correction de l\u2019orthographe, la grammaire, la syntaxe, voire la mise en forme de vos documents.",
+    image: IMAGES.relectureCorrection,
+    imageAlt: "Document corrigé à la main, illustrant la relecture et la correction de textes",
+    imageFirst: false,
+    accent: "terracotta",
+  },
+  {
+    title: "Réécriture, réformulation de textes",
+    text: "On se situe entre la correction et la rédaction. La réécriture vise à retravailler votre écrit afin d\u2019en améliorer le style rédactionnel.",
+    image: IMAGES.reecriture,
+    imageAlt: "Texte réécrit avec corrections en rouge, illustrant la réformulation de textes",
+    imageFirst: true,
+    accent: "bleuGris",
+  },
+  {
+    title: "REDACTION DE TEXTES",
+    text: "Adieu la page blanche\u00A0! J\u2019assure la rédaction de tous vos écrits\u00A0: CV, lettre de motivation, lettres administratives, écrits professionnels, récits de vie, monographies, discours, etc.",
+    image: null,
+    accent: "bleuGris",
+  },
+];
 
 export const metadata = {
   title: "Des prestations pour vous",
@@ -18,28 +45,34 @@ export default function Prestations() {
             lead=""
           />
 
-          <div className="mini-cards">
-            <div className="mini-card">
-              <FeatherMark size={18} />
-              <div>
-                <h4>RELECTURE ET CORRECTION</h4>
-                <p>Ne vous posez plus de questions su la manière de rédiger vos textes.Je relis vos écrits et assure la correction de l'orthographe, la grammaire, la syntaxe, voire la mise en forme de vos documents .</p>
-              </div>
-            </div>
-            <div className="mini-card">
-              <FeatherMark size={18} color="var(--bleu-gris)" />
-              <div>
-                <h4>Réécriture, réformulation de textes</h4>
-                <p>On se situe entre la correstion et la rédaction.La Réécriture vise à retravailler votre écrit afin d'en améliorer le style rédactionnel.</p>
-              </div>
-            </div>
-            <div className="mini-card">
-              <FeatherMark size={18} color="var(--bleu-gris)" />
-              <div>
-                <h4>REDACTION DE TEXTES</h4>
-                <p>Adieu la page blanche ! j'assure la rédaction de tous vos écrits : CV, lettre de motivation, lettres administratives, écrits professionnels, récits de vie, monographies, discours  etc.</p>
-              </div>
-            </div>
+          <div className="prestation-services">
+            {PRESTATION_SERVICES.map((service) => (
+              <article
+                key={service.title}
+                className={`prestation-service${service.image ? " has-image" : ""}${service.imageFirst ? " image-first" : ""}`}
+              >
+                {service.image && (
+                  <div className="prestation-service-photo">
+                    <Image
+                      src={service.image}
+                      alt={service.imageAlt}
+                      fill
+                      sizes="(max-width: 860px) 100vw, 420px"
+                    />
+                  </div>
+                )}
+                <div className="prestation-service-body">
+                  <FeatherMark
+                    size={18}
+                    color={service.accent === "terracotta" ? "var(--terracotta)" : "var(--bleu-gris)"}
+                  />
+                  <div>
+                    <h3>{service.title}</h3>
+                    <p>{service.text}</p>
+                  </div>
+                </div>
+              </article>
+            ))}
           </div>
         </div>
       </section>

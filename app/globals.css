@@ -329,6 +329,24 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .cta-banner p { color: var(--bleu-gris); margin-bottom: 22px; }
 
 /* ---------- prestations overview ---------- */
+.prestation-services { display: flex; flex-direction: column; gap: 28px; margin-top: 30px; }
+.prestation-service {
+  display: grid; grid-template-columns: 1fr; gap: 20px; align-items: center;
+  background: var(--bois-clair); border-radius: 18px; padding: 22px;
+}
+@media (min-width: 860px) {
+  .prestation-service.has-image { grid-template-columns: 1fr 1fr; }
+  .prestation-service.has-image.image-first .prestation-service-photo { order: -1; }
+}
+.prestation-service-photo {
+  position: relative; aspect-ratio: 4 / 3; border-radius: 14px; overflow: hidden;
+}
+.prestation-service-photo img { object-fit: cover; }
+.prestation-service-body {
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.prestation-service-body h3 { margin-bottom: 8px; font-size: 1.05rem; }
+.prestation-service-body p { color: var(--bleu-gris); font-size: 0.92rem; margin-bottom: 0; }
 .mini-cards { display: grid; grid-template-columns: 1fr; gap: 16px; margin-top: 30px; }
 @media (min-width: 640px) { .mini-cards { grid-template-columns: 1fr 1fr; } }
 .mini-card {

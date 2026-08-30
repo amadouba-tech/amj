@@ -5,7 +5,7 @@ import { PROFESSIONNELS } from "@/data/content.js";
 export const metadata = {
   title: "Prestations pour professionnels & secteur culturel",
   description:
-    "Professions libérales, entreprises, artistes et organismes culturels : écrits professionnels, communication, monographies.",
+    "Professions libérales, entreprises, artistes et structures culturelles : écrits professionnels, communication, monographies.",
 };
 
 export default function PrestationsProfessionnels() {
@@ -17,8 +17,8 @@ export default function PrestationsProfessionnels() {
   return (
     <AudienceDetailShell
       eyebrow="Publics concernés — Professionnels & secteur culturel"
-      title="Prestations pour professionnels & secteur culturel"
-      lead="Professions libérales, entreprises, artistes et organismes culturels&nbsp;: deux univers, un même souci de qualité pour vos écrits."
+      title="Prestations pour autres professionnels & structures culturelles"
+      lead="Professions libérales, entreprises, artistes et structures culturelles&nbsp;: deux univers, un même souci de qualité pour vos écrits."
       accent="bleuGris"
     >
       <div className="sub-audience">

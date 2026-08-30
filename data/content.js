@@ -1,6 +1,6 @@
 import {
   Users, Building2, Briefcase, Phone, FileText, MapPin,
-  GraduationCap, Mail, BookOpen, Heart, Landmark, Palette,
+  GraduationCap, Mail, BookOpen, Heart, Landmark, Palette, Mic,
 } from "lucide-react";
 import { IMAGES } from "./images.js";
 
@@ -36,8 +36,8 @@ export const AUDIENCES = [
   },
   {
     id: "professionnels",
-    label: "Professionnels & secteur culturel",
-    tagline: "Professions libérales, entreprises, artistes et organismes culturels.",
+    label: "Autres professionnels & structures culturelles",
+    tagline: "Professions libérales, entreprises, artistes et structures culturelles.",
     accent: "bleuGris",
     icon: Briefcase,
     path: "/prestations/professionnels",
@@ -97,9 +97,18 @@ export const PARTICULIERS = {
       items: [],
     },
     {
+      icon: Mic,
+      title: <em>Vos discours et autres écrits personnels</em>,
+      text: [
+        <em>Vous êtes touché par un évènement concernant vos proches et vous désirez le marquer d&rsquo;une pierre blanche.</em>,
+        <> <strong>Discours</strong> à l&rsquo;occasion d&rsquo;un mariage, un départ en retraite, la naissance d&rsquo;un enfant, des retrouvailles, une éloge funèbre&hellip;</>,
+      ],
+      items: [],
+    },
+    {
       icon: BookOpen,
       title: "Des histoires à raconter\u2026 transmettre ses souvenirs",
-      text: "Votre activité, professionnelle ou amateure, est singulière. Comme votre vie, ou plutôt quelques moments de vie particulièrement marquants. Je saurai vous écouter attentivement pour restituer et mettre en valeur ces épisodes mémorables.",
+      text: "Votre activité, professionnelle ou amateure, est singulière comme votre vie, ou plutôt quelques moments de vie particulièrement marquants. Je saurai vous écouter attentivement pour restituer et mettre en valeur ces épisodes mémorables.",
       items: [
         "Récits de moments de vie\u00A0: voyage, rencontre étonnante, parcours atypique\u2026, biographie",
         "Monographie de votre activité, d\u2019un lieu",
@@ -114,7 +123,7 @@ export const PARTICULIERS = {
 };
 
 export const ASSOCIATIONS = {
-  title: "Associations d\u2019aide aux personnes, structures d\u2019accueil et d\u2019hébergement, collectivités",
+  title: "Prestation  pour associations d\u2019aide aux personnes, structures d\u2019accueil et d\u2019hébergement, collectivités",
   subtitle: "EHPAD, résidences séniors, centres pour personnes en situation de handicap, et autres structures.",
   intro: "Je vous propose mes compétences pour une assistance administrative aux personnes en difficulté, mais également pour des missions liées au fonctionnement de votre institution.",
   sections: [

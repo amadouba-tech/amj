@@ -51,16 +51,6 @@ export default function Prestations() {
                 key={service.title}
                 className={`prestation-service${service.image ? " has-image" : ""}${service.imageFirst ? " image-first" : ""}`}
               >
-                {service.image && (
-                  <div className="prestation-service-photo">
-                    <Image
-                      src={service.image}
-                      alt={service.imageAlt}
-                      fill
-                      sizes="(max-width: 860px) 100vw, 420px"
-                    />
-                  </div>
-                )}
                 <div className="prestation-service-body">
                   <FeatherMark
                     size={18}
@@ -71,6 +61,16 @@ export default function Prestations() {
                     <p>{service.text}</p>
                   </div>
                 </div>
+                {service.image && (
+                  <div className="prestation-service-photo">
+                    <Image
+                      src={service.image}
+                      alt={service.imageAlt}
+                      fill
+                      sizes="(max-width: 860px) 100vw, 420px"
+                    />
+                  </div>
+                )}
               </article>
             ))}
           </div>

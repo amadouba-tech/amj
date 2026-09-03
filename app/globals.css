@@ -23,6 +23,39 @@ button { font-family: inherit; cursor: pointer; background: none; border: none; 
 input, textarea { font-family: inherit; }
 ol, ul { margin: 0; padding: 0; list-style: none; }
 p { margin: 0 0 14px; }
+
+/* Justified reading text — main content, SOS modal, footer descriptions */
+:is(main, .sos-modal, .footer-col) :is(
+  p,
+  .feather-list li span,
+  .feather-list li,
+  .audience-tagline,
+  .callout > span:first-child,
+  .info-row span
+) {
+  text-align: justify;
+  hyphens: auto;
+}
+
+/* Exceptions — centered or short UI text */
+.cta-banner :is(p, h2),
+.form-success p,
+.promo-banner-text,
+.nav-link,
+.footer-nav a,
+.footer-legal-inner a,
+.audience-cta,
+.btn-primary,
+.btn-outline,
+.contact-form label,
+.discover-card h3,
+.sos-modal-eyebrow {
+  text-align: unset;
+  hyphens: manual;
+}
+.cta-banner :is(p, h2) { text-align: center; }
+.form-success p { text-align: center; }
+
 h1, h2, h3, h4 {
   font-family: var(--font-cormorant), serif;
   font-weight: 500;

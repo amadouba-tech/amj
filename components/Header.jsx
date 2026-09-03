@@ -4,14 +4,16 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X, Search, LifeBuoy  } from "lucide-react";
+import { Menu, X, Search, LifeBuoy } from "lucide-react";
 import { NAV_ITEMS } from "@/data/content.js";
+import SosModal from "@/components/SosModal.jsx";
 
 import logo from "@/assets/logo.png";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [sosOpen, setSosOpen] = useState(false);
   const pathname = usePathname();
 
   function isActive(path) {
@@ -47,10 +49,17 @@ export default function Header() {
           >
             <Search size={19} strokeWidth={1.8} />
           </button>
-          <Link href="/contact" className="icon-btn sos-btn" aria-label="Besoin d'aide rapidement — SOS">
-  <LifeBuoy size={19} strokeWidth={1.8} />
-  <span className="icon-btn-label">SOS</span>
-</Link>
+          <button
+            type="button"
+            className="icon-btn sos-btn"
+            aria-label="Besoin d'aide rapidement — SOS écriture"
+            aria-haspopup="dialog"
+            aria-expanded={sosOpen}
+            onClick={() => setSosOpen(true)}
+          >
+            <LifeBuoy size={19} strokeWidth={1.8} />
+            <span className="icon-btn-label">SOS</span>
+          </button>
           <button className="menu-toggle" onClick={() => setMenuOpen((v) => !v)} aria-label="Ouvrir le menu">
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
           </button>
@@ -78,8 +87,20 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
+          <button
+            type="button"
+            className="nav-link sos-mobile-link"
+            onClick={() => {
+              setMenuOpen(false);
+              setSosOpen(true);
+            }}
+          >
+            SOS écriture
+          </button>
         </nav>
       )}
+
+      <SosModal open={sosOpen} onClose={() => setSosOpen(false)} />
     </header>
   );
 }

@@ -3,14 +3,14 @@ import { ServiceBlock } from "@/components/ui.jsx";
 import { ASSOCIATIONS } from "@/data/content.js";
 
 export const metadata = {
-  title: "Prestations pour associations & collectivités",
+  title: "Prestations pour associations et collectivités",
   description: ASSOCIATIONS.intro,
 };
 
 export default function PrestationsAssociations() {
   return (
     <AudienceDetailShell
-      eyebrow="Publics concernés — Associations & collectivités"
+      eyebrow="Publics concernés — Associations et collectivités"
       title={ASSOCIATIONS.title}
       subtitle={ASSOCIATIONS.subtitle}
       lead={ASSOCIATIONS.intro}

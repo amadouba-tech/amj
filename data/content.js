@@ -1,6 +1,6 @@
 import {
   Users, Building2, Briefcase, Phone, FileText, MapPin,
-  GraduationCap, Mail, Heart, Landmark, Palette, Mic,
+  GraduationCap, Mail, Heart, Landmark, Palette, Mic, BookOpen,
 } from "lucide-react";
 import { IMAGES } from "./images.js";
 
@@ -28,7 +28,7 @@ export const AUDIENCES = [
   },
   {
     id: "associations",
-    label: "Associations, structures d\u2019hébergement & collectivités",
+    label: "Associations, structures d\u2019hébergement et collectivités",
     tagline: "Pour l\u2019accompagnement de vos publics et le fonctionnement de votre institution.",
     accent: "mauve",
     icon: Building2,
@@ -36,7 +36,7 @@ export const AUDIENCES = [
   },
   {
     id: "professionnels",
-    label: "Autres professionnels & structures culturelles",
+    label: "Autres professionnels et structures culturelles",
     tagline: "Professions libérales, entreprises, artistes et structures culturelles.",
     accent: "bleuGris",
     icon: Briefcase,
@@ -62,30 +62,50 @@ export const FONCTIONNEMENT_STEPS = [
   },
 ];
 
-export const TARIFS_INDICATIFS = [
-  " Lettres, démarches administratives, constitution de dossiers administratifs : 30 €, ramené à 20 € pour un courrier simple",
-  "CV : 30 € ; lettre de motivation 30 € ; CV + lettre de motivation : 50 €",
-  "Permanence d'écrivain public : 40 € de l'heure",
-  "Rédaction ou correction des pièces de dossiers pour professionnels : 40 € de l'heure",
-  "Documents de communication, outils de promotion du secteur culturel : 40 € de l'heure, ramené à  un forfait de 25 € pour les documents simples ",
-  "Discours : 20 € la page",
-  "Ecrits littéraires : biographies, récits de vie, portraits de personnes méritantes, monographies… :  soit à l'heure d'entretien facturée 100 €, soit   20 € / 1 500 à       2 000 signes1.    Le tarif inclut les enregistrements, la saisie du document, les corrections et la livraison du papier,  sur clé USB ou par e-mail.",
-  "Correction simple (orthographe, grammaire, typographie) : 5 € / 1 500 signes1",
-  "Correction approfondie, avec mise en page : 7 € / 1 500 signes1",
-  "Correction et réécriture : 10 € / 1 500 signes1",
-  "Saisie :  6 € / 1 500 signes1",
-  "Saisie et mise en page : 8 € / 1 500 signes1",
-  "Autres travaux : 40 € de l'heure.",
-  "Réduction de 10 % pour les demandeurs d'emploi et étudiants, sur justificatif.",
-  "Devis gratuit. Il est obligatoire à partir de 100 €. Si vous me confiez des travaux longs, les devis seront ajustés.",
-  " Déplacement gratuit dans un rayon de 20 km. Au-delà, il sera facturé à 0,50 € / km puis tarif dégressif pour les distances >100 km. ",
-  "Espaces comprises. Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caractères Times New Roman 12 ou Calibri 12)",
+export const TARIFS_INTRO = [
+  "Exerçant mon activité d\u2019écrivain public dans le cadre juridique d\u2019une auto-entreprise, mes tarifs et factures sont établis hors TVA, non applicable en vertu de l\u2019article art. 293 B du CGI. ode général des impôts.",
+  "Chaque demande est différente, chaque tarif l\u2019est donc aussi. Plutôt qu\u2019une grille figée, je préfère prendre le temps de comprendre votre besoin avant de vous proposer un prix juste et transparent.",
 ];
 
+export const TARIFS_PRIX = [
+  "Lettres, démarches administratives, constitution de dossiers administratifs : 30\u00A0€, ramené à 20\u00A0€ pour un courrier simple",
+  "CV : 30\u00A0€ ; lettre de motivation 30\u00A0€ ; CV + lettre de motivation : 50\u00A0€",
+  "Permanence d\u2019écrivain public : 40\u00A0€ de l\u2019heure",
+  "Rédaction ou correction des pièces de dossiers pour professionnels : 40\u00A0€ de l\u2019heure",
+  "Documents de communication, outils de promotion du secteur culturel : 40\u00A0€ de l\u2019heure, ramené à un forfait de 25\u00A0€ pour les documents simples",
+  "Discours : 20\u00A0€ la page",
+  "Ecrits littéraires : biographies, récits de vie, portraits de personnes méritantes, monographies\u2026 : soit à l\u2019heure d\u2019entretien facturée 100\u00A0€, soit 20\u00A0€ / 1 500 à 2 000 signes\u00B9. Le tarif inclut les enregistrements, la saisie du document, les corrections et la livraison du papier, sur clé USB ou par e-mail.",
+  "Correction simple (orthographe, grammaire, typographie) : 5\u00A0€ / 1 500 signes\u00B9",
+  "Correction approfondie, avec mise en page : 7\u00A0€ / 1 500 signes\u00B9",
+  "Correction et réécriture : 10\u00A0€ / 1 500 signes\u00B9",
+  "Saisie : 6\u00A0€ / 1 500 signes\u00B9",
+  "Saisie et mise en page : 8\u00A0€ / 1 500 signes\u00B9",
+  "Autres travaux : 40\u00A0€ de l\u2019heure.",
+];
+
+export const TARIFS_PRECISIONS = [
+  "Réduction de 10 % pour les demandeurs d\u2019emploi et étudiants, sur justificatif.",
+  "Devis gratuit. Il est obligatoire à partir de 100\u00A0€. Si vous me confiez des travaux longs, les devis seront ajustés.",
+  "Déplacement gratuit dans un rayon de 20 km. Au-delà, il sera facturé à 0,50\u00A0€ / km puis tarif dégressif pour les distances >100 km.",
+];
+
+export const TARIFS_NOTE =
+  "Espaces comprises. Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caractères Times New Roman 12 ou Calibri 12)";
+
 export const FONCTIONNEMENT_PARAGRAPHS = [
-  "Toute demande émise par un particulier ou un professionnel nécessite un entretien téléphonique ou en présentiel, afin de définir précisément vos besoins. Art des Mots Justes adapte ses prestations pour répondre au plus près à la demande formulée. L\u2019entretien et le devis sont gratuits.",
+  "Toute demande émise par un particulier ou un professionnel nécessite un entretien téléphonique ou en présentiel, afin de définir précisément vos besoins. AMJ Écrivain public adapte ses prestations pour répondre au plus près à la demande formulée. L\u2019entretien et le devis sont gratuits.",
   "Le fonctionnement reste souple\u00A0: il est possible d\u2019organiser des rencontres ou de travailler à distance.",
   "Pour les travaux longs, le devis est réalisé après l\u2019entretien, ce qui permet de cerner exactement la demande exprimée et de réaliser une première ébauche, ou de travailler sur un échantillon de votre document. Cela permet d\u2019évaluer la durée nécessaire et de définir le prix de la prestation. Le test est gratuit.",
+];
+
+export const CHARTE_DEONTOLOGIE = {
+  title: "Charte de déontologie",
+};
+
+export const HOME_PUBLICS_ITEMS = [
+  "Particuliers",
+  "Associations, structures d\u2019hébergement et collectivités",
+  "Autres professionnels et structures culturelles",
 ];
 
 export const PARTICULIERS = {
@@ -118,15 +138,14 @@ export const PARTICULIERS = {
     },
     {
       icon: Mic,
-      title: <em>Vos discours et autres écrits personnels</em>,
-      text: [
-        <em>Vous êtes touché par un évènement concernant vos proches et vous désirez le marquer d&rsquo;une pierre blanche.</em>,
-      ],
+      title: "Vos discours et autres écrits personnels",
+      text: "Vous êtes touché par un évènement concernant vos proches et vous désirez le marquer d\u2019une pierre blanche.",
       items: [
-        <> <strong>Discours</strong> à l&rsquo;occasion d&rsquo;un mariage, un départ en retraite, la naissance d&rsquo;un enfant, des retrouvailles, une éloge funèbre&hellip;</>,
+        "Discours à l\u2019occasion d\u2019un mariage, un départ en retraite, la naissance d\u2019un enfant, des retrouvailles, une éloge funèbre\u2026",
       ],
     },
     {
+      icon: BookOpen,
       title: "Des histoires à raconter\u2026 transmettre ses souvenirs",
       text: "Votre activité, professionnelle ou amateure, est singulière comme votre vie, ou plutôt quelques moments de vie particulièrement marquants. Je saurai vous écouter attentivement pour restituer et mettre en valeur ces épisodes mémorables.",
       items: [
@@ -143,7 +162,7 @@ export const PARTICULIERS = {
 };
 
 export const ASSOCIATIONS = {
-  title: "Prestation  pour associations d\u2019aide aux personnes, structures d\u2019accueil et d\u2019hébergement, collectivités",
+  title: "Prestations pour associations d\u2019aide aux personnes, structures d\u2019accueil et d\u2019hébergement, collectivités",
   subtitle: "EHPAD, résidences séniors, centres pour personnes en situation de handicap, et autres structures.",
   intro: "Je vous propose mes compétences pour une assistance administrative aux personnes en difficulté, mais également pour des missions liées au fonctionnement de votre institution.",
   sections: [
@@ -188,7 +207,7 @@ export const PROFESSIONNELS = {
     icon: Briefcase,
     intro: [
       "Vous exercez une activité libérale, vous intervenez dans le secteur tertiaire (presse spécialisée, tourisme, voyages\u2026), vous êtes artisan ou entrepreneur\u00A0: peu importe votre domaine, vous souhaitez valoriser votre société par la qualité de vos écrits professionnels, votre communication, voire une monographie de votre activité. Je vous accompagne dans cette démarche.",
-      "Votre activité vous accapare et vous tenez à préserver votre cœur de métier\u00A0: ne vous laissez pas déborder par la partie administrative. J\u2019apporte une plus-value à la qualité de vos écrits professionnels, en relecture-correction comme en rédaction.",
+      "Votre activité vous accapare et vous tenez à Préserver votre cœur de métier.\u00A0: ne vous laissez pas déborder par la partie administrative. Je me charge d\u2019apporter une plus-value à la qualité de vos écrits professionnels (relecture et correction,  comme en rédaction).",
     ],
     items: [
       "Travaux de secrétariat",
@@ -223,7 +242,7 @@ export const QUI_SUIS_JE_INTRO = {
     </>
   ),
   paragraphs: [
-    "Pendant une trentaine d\'années, j\'ai développé mes compétences rédactionnelles au sein des collectivités territoriales pour des écrits allant du simple courrier administratif à la note de présentation d\'un projet structurant pour demande de subvention européenne, sans oublier les comptes rendus, rapports, argumentaires juridiques et autres documents traités au quotidien.",
+    "Pendant plus de 25 ans, j\'ai développé mes compétences rédactionnelles au sein des collectivités territoriales pour des écrits allant du simple courrier administratif à la note de présentation d\'un projet structurant pour demande de subvention européenne, sans oublier les comptes rendus, rapports, argumentaires juridiques et autres documents traités au quotidien.",
     "Par ailleurs, mon investissement dans l\'univers associatif et culturel a permis de diversifier mon style d\'écriture en m\'orientant vers la création de textes pour le spectacle vivant. Je me suis également consacrée à d\'autres missions (création d\'un dossier de mécénat, statuts associatifs\u2026).",
     <>
       Aujourd'hui, je souhaite mettre mes compétences rédactionnelles au service des personnes ayant besoin d'un
@@ -256,7 +275,7 @@ export const EXPERIENCE_GROUPS = [
     items: [
       "CV et lettres de motivation",
       "Courriers administratifs et juridiques",
-      "Démarches et formalités pour demandes de visas, cartes de séjour",
+      "Démarches administratives diverses et formalités pour demandes de visas, cartes de séjour",
       "Discours pour éloges funèbres",
       "Récits de vie, monographie d\u2019activité",
     ],
@@ -265,10 +284,11 @@ export const EXPERIENCE_GROUPS = [
     title: "25 ans au service des collectivités",
     icon: Landmark,
     items: [
-      "Plus de 25 ans au service de communes de 2\u00A0000 à 3\u00A0600 habitants, en tant que directrice générale des services",
+      "Plus de 25 ans au service de communes de 2\u00A0000 à 3\u00A0600 habitants, en tant que directrice générale des services.",
       "Spécialisation en droit de l\u2019urbanisme, droit des marchés publics, finances publiques et droit privé (litiges des particuliers)",
       "Rédaction des pièces de marchés publics, des documents de plan local d\u2019urbanisme (PLU)",
       "Comptes rendus de commissions, de conseils municipaux et de diverses réunions\u00A0; rapports divers",
+      "Courriers juridiques",
       "Présentations de budgets, rapports d\u2019orientations budgétaires",
       "Constitution de dossiers de subventions",
     ],
@@ -277,15 +297,12 @@ export const EXPERIENCE_GROUPS = [
     title: "Mon engagement dans le domaine culturel",
     icon: Palette,
     items: [
-      "Membre du conseil d\u2019administration d\u2019un orchestre d\u2019harmonie (budgets, comptes rendus de réunions, élaboration de projets, affiches et programmes de concerts)",
       "Musicienne dans des orchestres d\u2019harmonie et une banda (clarinette, saxophone)",
-      "Création d\u2019un livret sur le mécénat",
-      "Bonne connaissance du fonctionnement des conservatoires de musique, danse et théâtre",
+      "Membre du conseil d\u2019administration d\u2019un orchestre d\u2019harmonie (budgets, comptes rendus de réunions, élaboration de projets\u2026)",
+      "Création d\u2019un livret sur le mécénat\u00A0; récits pour des concerts-lectures, des contes musicaux",
       "Élaboration de textes de présentation de concerts",
-      "Création de récits pour des concerts-lectures, des contes musicaux",
-      "Mémoire sur les musiques nomades\u00A0: tziganes, gitanes et jazz manouche",
-      "Documents de communication et de programmation pour un théâtre",
-      "Préparation d\u2019une plaquette de programme de saison pour une communauté d\u2019agglomération",
+      "Documents de communication et de programmation\u00A0; Préparation d\u2019une plaquette du programme de saison culturelle pour une communauté d\u2019agglomération",
+      "Bonne connaissance du fonctionnement des conservatoires de musique, danse et théâtre",
     ],
   },
 ];
@@ -304,14 +321,14 @@ export const DISCOVER_CARDS = [
     image: IMAGES.cardParticuliers,
   },
   {
-    tag: "Associations & collectivités",
+    tag: "Associations et collectivités",
     accent: "mauve",
     title: "Un accompagnement pour vos publics et votre institution",
     path: "/prestations/associations",
     image: IMAGES.cardAssociations,
   },
   {
-    tag: "Professionnels & culture",
+    tag: "Professionnels et culture",
     accent: "bleuGris",
     title: "Vos écrits professionnels et artistiques valorisés",
     path: "/prestations/professionnels",

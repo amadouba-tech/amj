@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Eyebrow, PageIntro, AudienceCard, FeatherMark } from "@/components/ui.jsx";
-import { AUDIENCES, FONCTIONNEMENT_STEPS, FONCTIONNEMENT_PARAGRAPHS } from "@/data/content.js";
+import { AUDIENCES } from "@/data/content.js";
 import { IMAGES } from "@/data/images.js";
 
 const PRESTATION_SERVICES = [
@@ -10,7 +10,6 @@ const PRESTATION_SERVICES = [
     image: IMAGES.relectureCorrection,
     imageAlt: "Document corrigé à la main, illustrant la relecture et la correction de textes",
     imageFirst: false,
-    accent: "terracotta",
   },
   {
     title: "Réécriture, réformulation de textes",
@@ -18,13 +17,11 @@ const PRESTATION_SERVICES = [
     image: IMAGES.reecriture,
     imageAlt: "Texte réécrit avec corrections en rouge, illustrant la réformulation de textes",
     imageFirst: true,
-    accent: "bleuGris",
   },
   {
     title: "REDACTION DE TEXTES",
     text: "Adieu la page blanche\u00A0! J\u2019assure la rédaction de tous vos écrits\u00A0: CV, lettre de motivation, lettres administratives, écrits professionnels, récits de vie, monographies, discours, etc.",
     image: null,
-    accent: "bleuGris",
   },
 ];
 
@@ -52,10 +49,7 @@ export default function Prestations() {
                 className={`prestation-service${service.image ? " has-image" : ""}${service.imageFirst ? " image-first" : ""}`}
               >
                 <div className="prestation-service-body">
-                  <FeatherMark
-                    size={18}
-                    color={service.accent === "terracotta" ? "var(--terracotta)" : "var(--bleu-gris)"}
-                  />
+                  <FeatherMark size={18} color="var(--terracotta)" />
                   <div>
                     <h3>{service.title}</h3>
                     <p>{service.text}</p>
@@ -73,35 +67,6 @@ export default function Prestations() {
                 )}
               </article>
             ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section alt">
-        <div className="section-inner">
-          <Eyebrow>Fonctionnement</Eyebrow>
-          <h2>Comment je procède ?</h2>
-          {FONCTIONNEMENT_PARAGRAPHS.map((p, i) => <p key={i} className="paragraph">{p}</p>)}
-          <div className="steps-grid compact">
-            {FONCTIONNEMENT_STEPS.map((step, i) => {
-              const Icon = step.icon;
-              return (
-                <div className="step-card" key={i}>
-                  <div className="step-icon"><Icon size={20} strokeWidth={1.6} /></div>
-                  <h3>{step.title}</h3>
-                  <p>{step.text}</p>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
-      <section className="section">
-        <div className="section-inner">
-          <div className="charte-card">
-            <h4>Charte de déontologie</h4>
-            <p>Bientôt disponible sur cette page.</p>
           </div>
         </div>
       </section>

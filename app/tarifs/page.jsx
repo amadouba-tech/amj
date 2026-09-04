@@ -1,5 +1,5 @@
 import { PageIntro, PrimaryButton, FeatherMark } from "@/components/ui.jsx";
-import { FONCTIONNEMENT_STEPS, TARIFS_INDICATIFS } from "@/data/content.js";
+import { FONCTIONNEMENT_STEPS, TARIFS_INTRO, TARIFS_PRIX, TARIFS_PRECISIONS } from "@/data/content.js";
 
 export const metadata = {
   title: "Tarifs",
@@ -13,20 +13,27 @@ export default function Tarifs() {
         <PageIntro
           eyebrow="Tarifs"
           title="Un devis gratuit, sur mesure"
-          lead="Exerçant mon activité d&rsquo;écrivain public dans le cadre juridique d&rsquo;une auto-entreprise, mes tarifs et factures sont établis hors TVA, non applicable, art. 293 B du Code général des impôts."
+          lead={TARIFS_INTRO[0]}
         />
-        <p className="paragraph">
-          Chaque demande est différente, chaque tarif l&rsquo;est donc aussi. Plutôt qu&rsquo;une grille figée, je préfère
-          prendre le temps de comprendre votre besoin avant de vous proposer un prix juste et transparent.
-        </p>
+        <p className="paragraph">{TARIFS_INTRO[1]}</p>
+
         <ul className="feather-list tarif-list">
-          {TARIFS_INDICATIFS.map((text, i) => (
+          {TARIFS_PRIX.map((text, i) => (
             <li key={i}>
               <FeatherMark size={13} />
               <span>{text}</span>
             </li>
           ))}
         </ul>
+
+        {TARIFS_PRECISIONS.map((text, i) => (
+          <p key={i} className="paragraph tarif-precision">{text}</p>
+        ))}
+
+        <p className="tarif-note">
+          Espaces comprises<sup>1</sup>. Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caractères Times New Roman 12 ou Calibri 12)
+        </p>
+
         <div className="steps-grid">
           {FONCTIONNEMENT_STEPS.map((step, i) => {
             const Icon = step.icon;

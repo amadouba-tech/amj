@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { ArrowRight, LifeBuoy, X } from "lucide-react";
 import { FeatherMark } from "@/components/ui.jsx";
@@ -21,6 +22,7 @@ export default function SosModal({ open, onClose }) {
 
     window.addEventListener("keydown", onKeyDown);
     dialogRef.current?.focus();
+    window.scrollTo(0, 0);
 
     return () => {
       document.body.style.overflow = previousOverflow;
@@ -28,9 +30,9 @@ export default function SosModal({ open, onClose }) {
     };
   }, [open, onClose]);
 
-  if (!open) return null;
+  if (!open || typeof document === "undefined") return null;
 
-  return (
+  return createPortal(
     <div className="sos-modal-overlay" onClick={onClose}>
       <div
         ref={dialogRef}
@@ -75,6 +77,7 @@ export default function SosModal({ open, onClose }) {
           </Link>
         </div>
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }

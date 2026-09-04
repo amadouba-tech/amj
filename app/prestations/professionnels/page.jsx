@@ -3,7 +3,7 @@ import { FeatherMark } from "@/components/ui.jsx";
 import { PROFESSIONNELS } from "@/data/content.js";
 
 export const metadata = {
-  title: "Prestations pour professionnels & secteur culturel",
+  title: "Prestations pour professionnels et secteur culturel",
   description:
     "Professions libérales, entreprises, artistes et structures culturelles : écrits professionnels, communication, monographies.",
 };
@@ -16,8 +16,8 @@ export default function PrestationsProfessionnels() {
 
   return (
     <AudienceDetailShell
-      eyebrow="Publics concernés — Professionnels & secteur culturel"
-      title="Prestations pour autres professionnels & structures culturelles"
+      eyebrow="Publics concernés — Professionnels et secteur culturel"
+      title="Prestations pour autres professionnels et structures culturelles"
       lead="Professions libérales, entreprises, artistes et structures culturelles&nbsp;: deux univers, un même souci de qualité pour vos écrits."
       accent="bleuGris"
     >

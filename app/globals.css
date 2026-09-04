@@ -25,20 +25,34 @@ ol, ul { margin: 0; padding: 0; list-style: none; }
 p { margin: 0 0 14px; }
 
 /* Justified reading text — main content, SOS modal, footer descriptions */
+main p,
+.sos-modal p,
+.footer-col p,
 :is(main, .sos-modal, .footer-col) :is(
-  p,
-  .feather-list li span,
+  .lead,
+  .section-lead,
+  .paragraph,
+  .subtitle,
+  .fine-print,
+  .intro-body p,
+  .step-card p,
+  .service-body p,
+  .prestation-service-body p,
   .feather-list li,
+  .feather-list li span,
   .audience-tagline,
   .callout > span:first-child,
-  .info-row span
+  .info-row span,
+  .placeholder-card p,
+  .tarif-note,
+  .tarif-precision
 ) {
   text-align: justify;
   hyphens: auto;
 }
 
 /* Exceptions — centered or short UI text */
-.cta-banner :is(p, h2),
+.cta-banner h2,
 .form-success p,
 .promo-banner-text,
 .nav-link,
@@ -53,7 +67,7 @@ p { margin: 0 0 14px; }
   text-align: unset;
   hyphens: manual;
 }
-.cta-banner :is(p, h2) { text-align: center; }
+.cta-banner h2 { text-align: center; }
 .form-success p { text-align: center; }
 
 h1, h2, h3, h4 {
@@ -182,9 +196,11 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 }
 .sos-modal-close:hover { background: var(--bois-clair); color: var(--encre); }
 .sos-modal-header {
-  display: flex; flex-direction: column; align-items: center; text-align: center;
+  display: flex; flex-direction: column; align-items: center;
   padding: 8px 36px 8px; margin-bottom: 22px;
 }
+.sos-modal-header h2,
+.sos-modal-eyebrow { text-align: center; }
 .sos-modal-icon {
   display: flex; align-items: center; justify-content: center;
   width: 72px; height: 72px; border-radius: 999px; flex-shrink: 0;
@@ -433,7 +449,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 /* ---------- cta banner ---------- */
 .cta-banner { text-align: center; }
 .cta-banner .section-inner { max-width: 620px; }
-.cta-banner p { color: var(--bleu-gris); margin-bottom: 22px; }
+.cta-banner p { color: var(--bleu-gris); margin-bottom: 22px; text-align: justify; }
 
 /* ---------- prestations overview ---------- */
 .prestation-services { display: flex; flex-direction: column; gap: 28px; margin-top: 30px; }

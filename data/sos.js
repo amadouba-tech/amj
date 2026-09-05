@@ -1,7 +1,5 @@
 export const SOS_CONTENT = {
   title: "Alerte SOS écriture",
-  intro:
-    "Une urgence rédactionnelle\u00A0? AMJ Écrivain public intervient immédiatement pour vous débloquer.",
   items: [
     {
       situation:

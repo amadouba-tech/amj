@@ -63,8 +63,8 @@ export const FONCTIONNEMENT_STEPS = [
 ];
 
 export const TARIFS_INTRO = [
-  "Exerçant mon activité d\u2019écrivain public dans le cadre juridique d\u2019une auto-entreprise, mes tarifs et factures sont établis hors TVA, non applicable en vertu de l\u2019article art. 293 B du CGI. ode général des impôts.",
-  "Chaque demande est différente, chaque tarif l\u2019est donc aussi. Plutôt qu\u2019une grille figée, je préfère prendre le temps de comprendre votre besoin avant de vous proposer un prix juste et transparent.",
+  "Exer\u00E7ant mon activit\u00E9 d\u2019\u00E9crivain public dans le cadre juridique d\u2019une auto-entreprise, mes tarifs et factures sont \u00E9tablis hors TVA, non applicable en vertu de l\u2019article 293\u00A0B du CGI (Code g\u00E9n\u00E9ral des imp\u00F4ts).",
+  "Chaque demande est diff\u00E9rente, chaque tarif l\u2019est donc aussi. Plut\u00F4t qu\u2019une grille fig\u00E9e, je pr\u00E9f\u00E8re prendre le temps de comprendre votre besoin avant de vous proposer un prix juste et transparent.",
 ];
 
 export const TARIFS_PRIX = [
@@ -74,7 +74,7 @@ export const TARIFS_PRIX = [
   "Rédaction ou correction des pièces de dossiers pour professionnels : 40\u00A0€ de l\u2019heure",
   "Documents de communication, outils de promotion du secteur culturel : 40\u00A0€ de l\u2019heure, ramené à un forfait de 25\u00A0€ pour les documents simples",
   "Discours : 20\u00A0€ la page",
-  "Ecrits littéraires : biographies, récits de vie, portraits de personnes méritantes, monographies\u2026 : soit à l\u2019heure d\u2019entretien facturée 100\u00A0€, soit 20\u00A0€ / 1 500 à 2 000 signes\u00B9. Le tarif inclut les enregistrements, la saisie du document, les corrections et la livraison du papier, sur clé USB ou par e-mail.",
+  "Ecrits litt\u00E9raires\u00A0: biographies, r\u00E9cits de vie, portraits de personnes m\u00E9ritantes, monographies\u2026\u00A0: soit \u00E0 l\u2019heure d\u2019entretien factur\u00E9e 120\u00A0\u20AC. Le tarif inclut les enregistrements, la saisie du document, les corrections et la livraison du papier, sur cl\u00E9 USB ou par e-mail.",
   "Correction simple (orthographe, grammaire, typographie) : 5\u00A0€ / 1 500 signes\u00B9",
   "Correction approfondie, avec mise en page : 7\u00A0€ / 1 500 signes\u00B9",
   "Correction et réécriture : 10\u00A0€ / 1 500 signes\u00B9",
@@ -90,7 +90,9 @@ export const TARIFS_PRECISIONS = [
 ];
 
 export const TARIFS_NOTE =
-  "Espaces comprises. Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caractères Times New Roman 12 ou Calibri 12)";
+  "Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caract\u00E8res Times New Roman 12 ou Calibri 12)";
+
+export const TARIFS_FOOTNOTE = "Espaces comprises.";
 
 export const FONCTIONNEMENT_PARAGRAPHS = [
   "Toute demande émise par un particulier ou un professionnel nécessite un entretien téléphonique ou en présentiel, afin de définir précisément vos besoins. AMJ Écrivain public adapte ses prestations pour répondre au plus près à la demande formulée. L\u2019entretien et le devis sont gratuits.",
@@ -209,7 +211,7 @@ export const ASSOCIATIONS = {
       text: "La rédaction de vos documents dans les règles de l\u2019art peut paraître fastidieuse, et le temps manque souvent pour un travail rédactionnel minutieux, sur le fond comme sur la forme. Pourtant, vos écrits reflètent l\u2019image de votre institution. C\u2019est le moment de faire appel à un écrivain public pour les valoriser\u00A0:",
       items: [
         "Travaux de secrétariat",
-        "Écrits professionnels\u00A0: comptes rendus, rapports, résumés de conférences, notes de présentation d\u2019un projet, montage de dossiers de subventions",
+        "Écrits professionnels\u00A0: comptes rendus, rapports, résumés de conférences,||notes de présentation d\u2019un projet, montage de dossiers de subventions",
         "Documents de communication, livret d\u2019accueil pour les nouveaux arrivants ou les résidents",
         "Monographie d\u2019une commune, d\u2019un lieu-dit, d\u2019un élément de patrimoine, d\u2019une association, d\u2019une institution",
       ],
@@ -223,11 +225,11 @@ export const PROFESSIONNELS = {
     icon: Briefcase,
     intro: [
       "Vous exercez une activité libérale, vous intervenez dans le secteur tertiaire (presse spécialisée, tourisme, voyages\u2026), vous êtes artisan ou entrepreneur\u00A0: peu importe votre domaine, vous souhaitez valoriser votre société par la qualité de vos écrits professionnels, votre communication, voire une monographie de votre activité. Je vous accompagne dans cette démarche.",
-      "Votre activité vous accapare et vous tenez à Préserver votre cœur de métier.\u00A0: ne vous laissez pas déborder par la partie administrative. Je me charge d\u2019apporter une plus-value à la qualité de vos écrits professionnels (relecture et correction,  comme en rédaction).",
+      "Préserver votre cœur de métier. Je me charge d\u2019apporter une plus-value à la qualité de vos écrits professionnels (relecture et correction, rédaction).",
     ],
     items: [
       "Travaux de secrétariat",
-      "Écrits professionnels\u00A0: comptes rendus, rapports, résumés de conférences, notes de présentation d\u2019un projet, montage de dossiers de subventions (liste non exhaustive)",
+      "Écrits professionnels\u00A0: comptes rendus, rapports, résumés de conférences,||notes de présentation d\u2019un projet, montage de dossiers de subventions (liste non exhaustive)",
       "Documents de communication",
       "Monographie de la société",
     ],
@@ -240,11 +242,11 @@ export const PROFESSIONNELS = {
       "Musicien, danseur, comédien\u2026 votre parcours artistique est souvent jalonné de sacrifices pour atteindre un haut niveau\u00A0: un travail acharné, de longues répétitions, des représentations publiques et parfois l\u2019enseignement de la discipline. Mais la passion n\u2019a pas de prix\u00A0! Artistes, professionnels ou amateurs avertis, je révèle votre parcours à travers une monographie, un récit de vie voué au théâtre ou à l\u2019apprentissage d\u2019un instrument. Je reste également au service des structures culturelles pour corriger des documents complexes, aider à monter des dossiers ou développer vos outils de communication.",
     ],
     items: [
-      "Monographie d\u2019artiste, biographie, récit d\u2019un moment de vie marquant\u00A0; monographie de la structure culturelle, livret de l\u2019établissement",
+      "Monographie d\u2019artiste, biographie, récit d\u2019un moment de vie marquant\u00A0;||monographie de la structure culturelle, livret de l\u2019établissement",
       "Votre institution\u00A0: statuts associatifs, projets d\u2019établissement, demandes de subvention",
-      "Dossiers de promotion\u00A0: plaquette de saison, dossier pédagogique, dossier de presse, dossier de mécénat ou de financement participatif",
+      "Dossiers de promotion\u00A0: plaquette de saison, dossier pédagogique,||dossier de presse, dossier de mécénat ou de financement participatif",
       "Écriture artistique\u00A0: textes à l\u2019appui des œuvres, textes pour le spectacle vivant, contes musicaux",
-      "Documents de communication\u00A0: flyers, newsletter du programme, programme distribué à l\u2019entrée du spectacle, livret d\u2019exposition\u2026",
+      "Documents de communication\u00A0: flyers, newsletter du programme,||programme distribué à l\u2019entrée du spectacle, livret d\u2019exposition\u2026",
       "Correction de scénarii, de romans",
     ],
   },

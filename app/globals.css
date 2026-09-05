@@ -45,6 +45,7 @@ main p,
   .info-row span,
   .placeholder-card p,
   .tarif-note,
+  .tarif-footnote,
   .tarif-precision
 ) {
   text-align: justify;
@@ -503,16 +504,26 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .audience-detail.accent-bleuGris .service-icon { color: var(--bleu-gris); }
 .service-body { flex: 1; }
 .service-body p { color: var(--encre); max-width: 580px; }
+.audience-detail .service-body p,
+.audience-detail .paragraph,
+.audience-detail .feather-list {
+  max-width: none;
+}
 .feather-list { display: flex; flex-direction: column; gap: 9px; margin-top: 12px; }
 .feather-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.94rem; }
 .feather-list.nested { margin-top: 8px; margin-left: 4px; }
 .feather-list li span { flex: 1; }
-.tarif-list { margin: 24px 0 36px; max-width: 760px; }
+.tarif-list { margin: 24px 0 36px; max-width: none; }
 .tarif-list li { align-items: flex-start; }
-.tarif-precision { max-width: 760px; }
+.tarif-precision { max-width: none; }
+.tarif-intro-legal { max-width: none; }
 .tarif-note {
-  max-width: 760px; font-size: 0.82rem; color: var(--bleu-gris); margin-bottom: 36px;
+  max-width: none; font-size: 0.82rem; color: var(--bleu-gris); margin-top: 20px; margin-bottom: 0; font-style: italic;
 }
+.tarif-footnote {
+  max-width: none; font-size: 0.82rem; color: var(--bleu-gris); margin-top: 6px; margin-bottom: 36px;
+}
+.tarif-footnote sup { font-size: 0.72em; }
 .tarif-note sup { font-size: 0.72em; }
 
 .sub-audience { margin-top: 40px; padding-top: 36px; border-top: 1px solid var(--gris-colore); }
@@ -562,6 +573,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .info-row svg { flex-shrink: 0; margin-top: 2px; opacity: 0.9; }
 .info-row div { display: flex; flex-direction: column; gap: 2px; }
 .info-row strong { font-size: 0.96rem; font-weight: 600; }
+.info-sos-label { color: var(--blanc-casse); }
 .info-row span { font-size: 0.86rem; opacity: 0.88; line-height: 1.45; }
 .info-row.compact { gap: 10px; }
 .info-row.compact span { font-size: 0.82rem; }

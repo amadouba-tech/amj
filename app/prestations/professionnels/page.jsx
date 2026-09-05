@@ -1,5 +1,5 @@
 import AudienceDetailShell from "@/components/AudienceDetailShell.jsx";
-import { FeatherMark } from "@/components/ui.jsx";
+import { FeatherMark, FeatherListItem } from "@/components/ui.jsx";
 import { PROFESSIONNELS } from "@/data/content.js";
 
 export const metadata = {
@@ -28,7 +28,7 @@ export default function PrestationsProfessionnels() {
         </div>
         {lib.intro.map((p, i) => <p key={i} className="paragraph">{p}</p>)}
         <ul className="feather-list">
-          {lib.items.map((item, i) => <li key={i}><FeatherMark size={13} /><span>{item}</span></li>)}
+          {lib.items.map((item, i) => <FeatherListItem key={i} item={item} />)}
         </ul>
       </div>
 
@@ -39,7 +39,7 @@ export default function PrestationsProfessionnels() {
         </div>
         {art.intro.map((p, i) => <p key={i} className="paragraph">{p}</p>)}
         <ul className="feather-list">
-          {art.items.map((item, i) => <li key={i}><FeatherMark size={13} /><span>{item}</span></li>)}
+          {art.items.map((item, i) => <FeatherListItem key={i} item={item} />)}
         </ul>
       </div>
     </AudienceDetailShell>

@@ -1,4 +1,4 @@
-import { MapPin, Calendar, Euro, Phone, Mail } from "lucide-react";
+import { MapPin, Calendar, Euro, Phone, Mail, LifeBuoy } from "lucide-react";
 
 /**
  * Encart d'infos pratiques façon paris.fr (bloc rose sur la page de référence).
@@ -17,7 +17,14 @@ export default function InfoSidebar() {
         <MapPin size={18} />
         <div>
           <strong>Yonne (89)</strong>
-          <span>Déplacements possibles dans le département, et à distance partout en France.</span>
+          <span>Déplacements possibles dans le département, et à l&rsquo;extérieur.</span>
+        </div>
+      </div>
+
+      <div className="info-row">
+        <LifeBuoy size={18} />
+        <div>
+          <strong className="info-sos-label">SOS Ecriture</strong>
         </div>
       </div>
 

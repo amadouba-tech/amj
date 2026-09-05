@@ -54,7 +54,9 @@ export default function SosModal({ open, onClose }) {
           <div>
             <p className="sos-modal-eyebrow">SOS Écriture</p>
             <h2 id="sos-modal-title">{SOS_CONTENT.title}</h2>
-            <p className="sos-modal-intro">{SOS_CONTENT.intro}</p>
+            {SOS_CONTENT.intro && (
+              <p className="sos-modal-intro">{SOS_CONTENT.intro}</p>
+            )}
           </div>
         </div>
 

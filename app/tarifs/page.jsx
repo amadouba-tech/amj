@@ -1,5 +1,5 @@
 import { PageIntro, PrimaryButton, FeatherMark } from "@/components/ui.jsx";
-import { FONCTIONNEMENT_STEPS, TARIFS_INTRO, TARIFS_PRIX, TARIFS_PRECISIONS } from "@/data/content.js";
+import { FONCTIONNEMENT_STEPS, TARIFS_INTRO, TARIFS_PRIX, TARIFS_PRECISIONS, TARIFS_NOTE, TARIFS_FOOTNOTE } from "@/data/content.js";
 
 export const metadata = {
   title: "Tarifs",
@@ -13,8 +13,8 @@ export default function Tarifs() {
         <PageIntro
           eyebrow="Tarifs"
           title="Un devis gratuit, sur mesure"
-          lead={TARIFS_INTRO[0]}
         />
+        <p className="paragraph tarif-intro-legal">{TARIFS_INTRO[0]}</p>
         <p className="paragraph">{TARIFS_INTRO[1]}</p>
 
         <ul className="feather-list tarif-list">
@@ -30,8 +30,9 @@ export default function Tarifs() {
           <p key={i} className="paragraph tarif-precision">{text}</p>
         ))}
 
-        <p className="tarif-note">
-          Espaces comprises<sup>1</sup>. Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caractères Times New Roman 12 ou Calibri 12)
+        <p className="tarif-note">{TARIFS_NOTE}</p>
+        <p className="tarif-footnote">
+          <sup>1</sup> {TARIFS_FOOTNOTE}
         </p>
 
         <div className="steps-grid">

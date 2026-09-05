@@ -71,6 +71,23 @@ export function AudienceCard({ audience }) {
   );
 }
 
+export function FeatherListItem({ item, size = 13 }) {
+  const parts = item.split("||");
+  return (
+    <li>
+      <FeatherMark size={size} />
+      <span>
+        {parts.map((part, j) => (
+          <span key={j}>
+            {j > 0 && <br />}
+            {part}
+          </span>
+        ))}
+      </span>
+    </li>
+  );
+}
+
 export function ServiceBlock({ section }) {
   const Icon = section.icon;
   return (
@@ -94,22 +111,9 @@ export function ServiceBlock({ section }) {
         )}
         {section.items && section.items.length > 0 && (
           <ul className="feather-list">
-            {section.items.map((item, i) => {
-              const parts = item.split("||");
-              return (
-                <li key={i}>
-                  <FeatherMark size={13} />
-                  <span>
-                    {parts.map((part, j) => (
-                      <span key={j}>
-                        {j > 0 && <br />}
-                        {part}
-                      </span>
-                    ))}
-                  </span>
-                </li>
-              );
-            })}
+            {section.items.map((item, i) => (
+              <FeatherListItem key={i} item={item} />
+            ))}
           </ul>
         )}
       </div>

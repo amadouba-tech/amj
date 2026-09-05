@@ -58,7 +58,7 @@ export default function Header() {
             onClick={() => setSosOpen(true)}
           >
             <LifeBuoy size={19} strokeWidth={1.8} />
-            <span className="icon-btn-label">SOS</span>
+            <span className="icon-btn-label">SOS Ecriture</span>
           </button>
           <button className="menu-toggle" onClick={() => setMenuOpen((v) => !v)} aria-label="Ouvrir le menu">
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -95,7 +95,7 @@ export default function Header() {
               setSosOpen(true);
             }}
           >
-            SOS écriture
+            SOS Ecriture
           </button>
         </nav>
       )}

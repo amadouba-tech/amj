@@ -395,7 +395,14 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .home-charte { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--gris-colore); }
 .home-charte h2 { margin-bottom: 16px; }
 .home-publics-list { max-width: 720px; margin-top: 8px; }
-.home-publics-list li { font-size: 1rem; }
+.home-publics-list li { font-size: 1.05rem; align-items: center; }
+.home-publics-list li span {
+  font-family: var(--font-cormorant), serif;
+  font-size: 1.35rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.cta-highlight { color: var(--terracotta); }
 @media (min-width: 720px) { .steps-grid { grid-template-columns: repeat(3, 1fr); } }
 .step-card {
   background: var(--blanc-casse); border: 1px solid var(--gris-colore); border-radius: 18px;
@@ -478,9 +485,13 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .mini-card h4 { margin-bottom: 4px; }
 .mini-card p { color: var(--bleu-gris); font-size: 0.88rem; margin-bottom: 0; }
 .charte-card {
-  background: var(--gris-colore); border-radius: 16px; padding: 22px 26px;
+  background: rgba(71, 88, 109, 0.1);
+  border: 1px solid rgba(71, 88, 109, 0.22);
+  border-radius: 16px;
+  padding: 22px 26px;
 }
-.charte-card p { color: var(--bleu-gris); margin-bottom: 0; font-size: 0.9rem; }
+.charte-card p { color: var(--encre); margin-bottom: 14px; font-size: 0.95rem; }
+.charte-card p:last-child { margin-bottom: 0; }
 
 /* ---------- service blocks (audience detail pages) ---------- */
 .service-list { display: flex; flex-direction: column; gap: 34px; margin-top: 12px; }

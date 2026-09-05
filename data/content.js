@@ -100,6 +100,16 @@ export const FONCTIONNEMENT_PARAGRAPHS = [
 
 export const CHARTE_DEONTOLOGIE = {
   title: "Charte de déontologie",
+  paragraphs: [
+    "respecte les règles de déontologie et notamment le secret professionnel. Confidentialité et bienveillance sont aussi garantes de la confiance établie entre nous.",
+    "refuse d\u2019écrire les lettres de menaces, chantage, insultes, tout document destiné à tromper son destinataire (fraude sur la date, faux, plagiat, détournement de textes dans le cadre d\u2019une évaluation\u2026).",
+    {
+      before: " ne conclut en aucun cas avec son client de pacte de ",
+      emphasis: "quota litis",
+      after: " (pourcentage sur des sommes recouvrées sur le montant d\u2019un contrat commercial).",
+    },
+    "n\u2019intervient pas sur le fond, ni pour une réécriture totale des travaux d\u2019étudiants rentrant dans le cadre d\u2019une évaluation ou d\u2019un diplôme. En revanche, la prestation peut porter sur la relecture, la correction et la mise en page.",
+  ],
 };
 
 export const HOME_PUBLICS_ITEMS = [

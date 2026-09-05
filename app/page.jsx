@@ -30,8 +30,8 @@ export default function Accueil() {
           </p>
           <div className="event-hero-tags">
             <Tag accent="terracotta">Particuliers</Tag>
-            <Tag accent="mauve">Associations &amp; collectivités</Tag>
-            <Tag accent="bleuGris">Professionnels &amp; culture</Tag>
+            <Tag accent="mauve">Associations et collectivités</Tag>
+            <Tag accent="bleuGris">Professionnels et culture</Tag>
           </div>
         </div>
       </section>
@@ -58,6 +58,22 @@ export default function Accueil() {
 
           <div className="home-charte">
             <h2>{CHARTE_DEONTOLOGIE.title}</h2>
+            <div className="charte-card">
+              {CHARTE_DEONTOLOGIE.paragraphs.map((para, i) => (
+                <p key={i}>
+                  <strong><em>AMJ Écrivain public</em></strong>
+                  {typeof para === "string" ? (
+                    <>{" "}{para}</>
+                  ) : (
+                    <>
+                      {para.before}
+                      <em>{para.emphasis}</em>
+                      {para.after}
+                    </>
+                  )}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -98,7 +114,10 @@ export default function Accueil() {
 
       <section className="section cta-banner">
         <div className="section-inner">
-          <h2>Une idée, un projet d&rsquo;écriture , un document à faire relire&nbsp;?</h2>
+          <h2>
+            Une idée, un projet d&rsquo;écriture, un document{" "}
+            <span className="cta-highlight">à corriger ou</span> à faire relire&nbsp;?
+          </h2>
           <p>Parlons-en. L&rsquo;entretien et le devis sont toujours gratuits, et sans engagement.</p>
           <PrimaryButton href="/contact">Me contacter</PrimaryButton>
         </div>

@@ -83,13 +83,33 @@ export function ServiceBlock({ section }) {
         {Array.isArray(section.text) ? (
           section.text.map((p, i) => <p key={i}>{p}</p>)
         ) : (
-          section.text && <p>{section.text}</p>
+          section.text && (
+            <p>
+              {section.text}
+              {section.textHighlight && (
+                <span className="text-highlight">{section.textHighlight}</span>
+              )}
+            </p>
+          )
         )}
         {section.items && section.items.length > 0 && (
           <ul className="feather-list">
-            {section.items.map((item, i) => (
-              <li key={i}><FeatherMark size={13} /><span>{item}</span></li>
-            ))}
+            {section.items.map((item, i) => {
+              const parts = item.split("||");
+              return (
+                <li key={i}>
+                  <FeatherMark size={13} />
+                  <span>
+                    {parts.map((part, j) => (
+                      <span key={j}>
+                        {j > 0 && <br />}
+                        {part}
+                      </span>
+                    ))}
+                  </span>
+                </li>
+              );
+            })}
           </ul>
         )}
       </div>

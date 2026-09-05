@@ -143,15 +143,21 @@ export const PARTICULIERS = {
     {
       icon: Mail,
       title: "Des lettres de toutes sortes",
-      text: "Bien que le courriel s\u2019impose de manière récurrente, nul n\u2019est à l\u2019abri de devoir rédiger une lettre pour revendiquer ses droits, pour des raisons professionnelles, pour exprimer ses convictions, ses sentiments, ou simplement communiquer avec un être cher. Je vous aide à rédiger des lettres administratives ou à de hautes personnalités, des lettres de réclamation, des lettres professionnelles, ou toute correspondance privée.",
-      items: [],
+      text: "Bien que le courriel s\u2019impose de manière récurrente, nul n\u2019est à l\u2019abri de devoir rédiger une lettre pour revendiquer ses droits, pour des raisons professionnelles, pour exprimer ses convictions, ses sentiments, ou simplement communiquer avec un être cher. Je vous aide à ",
+      textHighlight: "rédiger.",
+      items: [
+        "Lettres administratives ou à de hautes personnalités,",
+        "Lettres de réclamation,",
+        "Lettres professionnelles,",
+        "Toute correspondance privée.",
+      ],
     },
     {
       icon: Mic,
       title: "Vos discours et autres écrits personnels",
       text: "Vous êtes touché par un évènement concernant vos proches et vous désirez le marquer d\u2019une pierre blanche.",
       items: [
-        "Discours à l\u2019occasion d\u2019un mariage, un départ en retraite, la naissance d\u2019un enfant, des retrouvailles, une éloge funèbre\u2026",
+        "Discours à l\u2019occasion d\u2019un mariage, un départ en retraite, la naissance d\u2019un enfant, des retrouvailles,||une éloge funèbre\u2026",
       ],
     },
     {

@@ -48,7 +48,8 @@ main p,
   .tarif-precision
 ) {
   text-align: justify;
-  hyphens: auto;
+  hyphens: none;
+  text-wrap: pretty;
 }
 
 /* Exceptions — centered or short UI text */
@@ -89,10 +90,11 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 }
 .eyebrow-spark { width: 12px; height: 12px; color: var(--terracotta); }
 
-.lead { font-size: 1.08rem; color: var(--bleu-gris); max-width: 640px; }
-.section-lead { color: var(--bleu-gris); max-width: 620px; margin-bottom: 28px; }
-.paragraph { color: var(--encre); max-width: 720px; }
-.subtitle { color: var(--bleu-gris); font-style: italic; margin-top: -8px; margin-bottom: 24px; max-width: 640px; }
+.lead { font-size: 1.08rem; color: var(--bleu-gris); max-width: 580px; }
+.section-lead { color: var(--bleu-gris); max-width: 560px; margin-bottom: 28px; }
+.paragraph { color: var(--encre); max-width: 620px; }
+.text-highlight { color: var(--terracotta); }
+.subtitle { color: var(--bleu-gris); font-style: italic; margin-top: -8px; margin-bottom: 24px; max-width: 580px; }
 .fine-print { font-size: 0.82rem; color: var(--bleu-gris); margin-top: 28px; font-style: italic; }
 
 /* ---------- buttons ---------- */
@@ -320,7 +322,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .page-intro { max-width: 720px; }
 .page-intro h1 { font-size: clamp(1.45rem, 2.5vw, 1.85rem); margin-bottom: 12px; }
 .intro-body p {
-  font-size: 1.08rem; color: var(--bleu-gris); max-width: 640px;
+  font-size: 1.08rem; color: var(--bleu-gris); max-width: 580px;
   line-height: 1.25; margin: 0 0 8px;
 }
 .intro-body p:last-child { margin-bottom: 0; }
@@ -441,10 +443,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .audience-card.accent-bleuGris:hover { border-color: var(--bleu-gris); }
 .audience-label { font-family: var(--font-cormorant), serif; font-size: 1.55rem; font-weight: 500; line-height: 1.25; }
 .audience-tagline { color: var(--bleu-gris); font-size: 1.05rem; flex: 1; }
-.audience-cta { display: inline-flex; align-items: center; gap: 6px; font-size: 1rem; font-weight: 500; color: var(--encre); margin-top: 10px; }
-.audience-card.accent-terracotta .audience-cta { color: var(--terracotta); }
-.audience-card.accent-mauve .audience-cta { color: var(--mauve); }
-.audience-card.accent-bleuGris .audience-cta { color: var(--bleu-gris); }
+.audience-cta { display: inline-flex; align-items: center; gap: 6px; font-size: 1rem; font-weight: 500; color: var(--terracotta); margin-top: 10px; }
 
 /* ---------- qui-suis-je teaser / monogram panel ---------- */
 .monogram-panel {
@@ -503,7 +502,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .audience-detail.accent-mauve .service-icon { color: var(--mauve); }
 .audience-detail.accent-bleuGris .service-icon { color: var(--bleu-gris); }
 .service-body { flex: 1; }
-.service-body p { color: var(--encre); max-width: 680px; }
+.service-body p { color: var(--encre); max-width: 580px; }
 .feather-list { display: flex; flex-direction: column; gap: 9px; margin-top: 12px; }
 .feather-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.94rem; }
 .feather-list.nested { margin-top: 8px; margin-left: 4px; }

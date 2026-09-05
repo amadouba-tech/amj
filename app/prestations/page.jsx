@@ -12,7 +12,7 @@ const PRESTATION_SERVICES = [
     imageFirst: false,
   },
   {
-    title: "Réécriture, réformulation de textes",
+    title: "REECRITURE, REFORMULATION DE TEXTES",
     text: "On se situe entre la correction et la rédaction. La réécriture vise à retravailler votre écrit afin d\u2019en améliorer le style rédactionnel.",
     image: IMAGES.reecriture,
     imageAlt: "Texte réécrit avec corrections en rouge, illustrant la réformulation de textes",
@@ -38,9 +38,22 @@ export default function Prestations() {
         <div className="section-inner">
           <PageIntro
             eyebrow="Des prestations pour vous"
-            title="Des services gradués, sur mesure, en fonction de vos besoins"
-            lead=""
+            title="Des prestations pour tous publics"
+            lead="Pour alléger la lecture, les prestations sont détaillées par public. Cliquez sur votre profil pour découvrir les services qui vous concernent."
           />
+          <div className="audience-grid">
+            {AUDIENCES.map((a) => <AudienceCard key={a.id} audience={a} />)}
+          </div>
+          <p className="fine-print">
+            La liste des prestations mentionnées dans les différentes rubriques n&rsquo;est pas exhaustive.
+          </p>
+        </div>
+      </section>
+
+      <section className="section alt">
+        <div className="section-inner">
+          <Eyebrow>Des prestations pour vous</Eyebrow>
+          <h2>Des services gradués, sur mesure, en fonction de vos besoins</h2>
 
           <div className="prestation-services">
             {PRESTATION_SERVICES.map((service) => (
@@ -68,23 +81,6 @@ export default function Prestations() {
               </article>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section className="section alt">
-        <div className="section-inner">
-          <Eyebrow>Publics concernés</Eyebrow>
-          <h2>Choisissez votre profil</h2>
-          <p className="section-lead">
-            Pour alléger la lecture, les prestations sont détaillées par public. Cliquez sur votre profil pour
-            découvrir les services qui vous concernent.
-          </p>
-          <div className="audience-grid">
-            {AUDIENCES.map((a) => <AudienceCard key={a.id} audience={a} />)}
-          </div>
-          <p className="fine-print">
-            La liste des prestations mentionnées dans les différentes rubriques n&rsquo;est pas exhaustive.
-          </p>
         </div>
       </section>
     </>

@@ -1,6 +1,6 @@
 import {
   Users, Building2, Briefcase, Phone, FileText, MapPin,
-  GraduationCap, Mail, Heart, Landmark, Palette, Mic, BookOpen,
+  GraduationCap, Mail, Heart, Landmark, Palette, Mic, BookOpen, Music,
 } from "lucide-react";
 import { IMAGES } from "./images.js";
 
@@ -260,25 +260,29 @@ export const QUI_SUIS_JE_INTRO = {
     </>
   ),
   paragraphs: [
-    "Pendant plus de 25 ans, j\'ai développé mes compétences rédactionnelles au sein des collectivités territoriales pour des écrits allant du simple courrier administratif à la note de présentation d\'un projet structurant pour demande de subvention européenne, sans oublier les comptes rendus, rapports, argumentaires juridiques et autres documents traités au quotidien.",
-    "Par ailleurs, mon investissement dans l\'univers associatif et culturel a permis de diversifier mon style d\'écriture en m\'orientant vers la création de textes pour le spectacle vivant. Je me suis également consacrée à d\'autres missions (création d\'un dossier de mécénat, statuts associatifs\u2026).",
+    "Pendant plus de 25 ans, j\u2019ai développé mes compétences rédactionnelles au sein des collectivités territoriales pour des écrits allant du simple courrier administratif à la note de présentation d\u2019un projet structurant pour demande de subvention européenne, sans oublier les comptes rendus, rapports, argumentaires juridiques et autres documents traités au quotidien.",
+    "Par ailleurs, mon investissement dans l\u2019univers associatif et culturel a permis de diversifier mon style d\u2019écriture en m\u2019orientant vers la création de textes pour le spectacle vivant. Je me suis également consacrée à d\u2019autres missions (création d\u2019un dossier de mécénat, statuts associatifs\u2026).",
     <>
-      Aujourd'hui, je souhaite mettre mes compétences rédactionnelles au service des personnes ayant besoin d'un
-      accompagnement pour des DEMARCHES ADMINISTRATIVES OU LA RÉDACTION DE <span className="intro-caps">VOS</span> ECRITS PERSONNELS OU PROFESSIONNELS.
+      Aujourd&rsquo;hui, je souhaite mettre mes compétences rédactionnelles au service des personnes ayant besoin d&rsquo;un
+      accompagnement pour des DEMARCHES ADMINISTRATIVES{" "}
+      <span className="text-highlight">
+        ou la rédaction de <span className="intro-caps">VOS</span> ECRITS PERSONNELS
+      </span>{" "}
+      ou PROFESSIONNELS.
     </>,
   ],
 };
 
 export const FORMATION = [
-  { text: "Formation d\u2019écrivain public au Centre national privé de formation à distance (CNFDI)" },
-  { text: "Stages d\u2019écrivain conseil au cabinet Françoise Peters (GREC), à Castelnau-le-Lez (34)" },
-  { text: "Formation de correcteur au Centre d\u2019écriture et de communication (CEC) à Paris, avec Jacques Décourt, auteur d\u2019ouvrages sur la langue française et enseignant à l\u2019École supérieure de journalisme de Lille" },
+  { text: <><strong>Formation d&rsquo;écrivain public</strong> au Centre national privé de formation à distance (CNFDI)</> },
+  { text: <><strong>Stages d&rsquo;écrivain conseil</strong> au cabinet Françoise Peters (GREC), à Castelnau-le-Lez (34)</> },
+  { text: <><strong>Formation de correcteur</strong> au Centre d&rsquo;écriture et de communication (CEC) à Paris, avec Jacques Décourt, auteur d&rsquo;ouvrages sur la langue française et enseignant à l&rsquo;École supérieure de journalisme de Lille</> },
   {
-    text: "Licence Conception et mise en œuvre de projets culturels, université d\u2019Aix-Marseille",
+    text: <><strong>Licence Conception et mise en œuvre de projets culturels</strong>, université d&rsquo;Aix-Marseille</>,
     sub: [
-      <>Mémoire : <em>Musiques nomades</em>&nbsp;: tziganes, gitanes et jazz manouche</>,
-      "Stage dans un théâtre (programmation et communication)",
-      "Stage au service culturel / spectacle vivant d\u2019une communauté d\u2019agglomération",
+      <><strong>Mémoire&nbsp;:</strong> <em>Musiques nomades</em>&nbsp;: <span className="text-highlight"><em>tziganes, gitanes et jazz manouche</em></span></>,
+      <><strong>Stage dans un théâtre</strong> (programmation et communication)</>,
+      <><strong>Stage au service culturel / spectacle vivant</strong> d&rsquo;une communauté d&rsquo;agglomération</>,
     ],
   },
   { text: "Lauréate du concours d\u2019attaché territorial (droit administratif et autres branches du droit)" },
@@ -294,33 +298,31 @@ export const EXPERIENCE_GROUPS = [
       "CV et lettres de motivation",
       "Courriers administratifs et juridiques",
       "Démarches administratives diverses et formalités pour demandes de visas, cartes de séjour",
-      "Discours pour éloges funèbres",
-      "Récits de vie, monographie d\u2019activité",
+      "Discours, récits de vie, monographie d\u2019activité",
     ],
   },
   {
     title: "25 ans au service des collectivités",
     icon: Landmark,
     items: [
-      "Plus de 25 ans au service de communes de 2\u00A0000 à 3\u00A0600 habitants, en tant que directrice générale des services.",
+      "Plus de 25 ans au service des communes de 2\u00A0000 à 3\u00A0600 habitants, en tant que directrice générale des services.",
       "Spécialisation en droit de l\u2019urbanisme, droit des marchés publics, finances publiques et droit privé (litiges des particuliers)",
       "Rédaction des pièces de marchés publics, des documents de plan local d\u2019urbanisme (PLU)",
-      "Comptes rendus de commissions, de conseils municipaux et de diverses réunions\u00A0; rapports divers",
+      "Comptes rendus de conseils municipaux et diverses réunions\u00A0; rapports divers",
       "Courriers juridiques",
-      "Présentations de budgets, rapports d\u2019orientations budgétaires",
+      "Présentation de budgets, rapports d\u2019orientations budgétaires",
       "Constitution de dossiers de subventions",
     ],
   },
   {
     title: "Mon engagement dans le domaine culturel",
-    icon: Palette,
+    icon: Music,
     items: [
-      "Musicienne dans des orchestres d\u2019harmonie et une banda (clarinette, saxophone)",
+      "Musicienne dans des orchestres d\u2019harmonie (clarinette, saxophone)",
       "Membre du conseil d\u2019administration d\u2019un orchestre d\u2019harmonie (budgets, comptes rendus de réunions, élaboration de projets\u2026)",
-      "Création d\u2019un livret sur le mécénat\u00A0; récits pour des concerts-lectures, des contes musicaux",
-      "Élaboration de textes de présentation de concerts",
-      "Documents de communication et de programmation\u00A0; Préparation d\u2019une plaquette du programme de saison culturelle pour une communauté d\u2019agglomération",
-      "Bonne connaissance du fonctionnement des conservatoires de musique, danse et théâtre",
+      "Création d\u2019un livret sur le mécénat\u00A0; récits pour des concerts-lectures, contes musicaux",
+      "Documents de communication et de programmation\u00A0; plaquette du programme de saison culturelle",
+      "Bonne connaissance du fonctionnement des conservatoires de musique",
     ],
   },
 ];

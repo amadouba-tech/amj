@@ -115,9 +115,9 @@ export default function Accueil() {
       <section className="section cta-banner">
         <div className="section-inner">
           <h2>
-            Une idée, un projet d&rsquo;écriture, un
+            Une idée, un projet d&rsquo;écriture,
             <br />
-            document à corriger ou à faire relire&nbsp;?
+            un document à corriger ou à faire relire&nbsp;?
           </h2>
           <PrimaryButton href="/contact">Me contacter</PrimaryButton>
         </div>

@@ -106,7 +106,7 @@ export const TARIFS_PRECISIONS = [
 ];
 
 export const TARIFS_NOTE =
-  "1 Espaces comprises. Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caract\u00E8res Times New Roman 12 ou Calibri 12)";
+  "1 Espaces comprises. Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caract\u00E8res Times New Roman 12 ou Calibri 12).";
 
 export const FONCTIONNEMENT_PARAGRAPHS = [
   "Toute demande émise par un particulier ou un professionnel nécessite un entretien téléphonique ou en présentiel, afin de définir précisément vos besoins. AMJ Écrivain public adapte ses prestations pour répondre au plus près à la demande formulée. L\u2019entretien et le devis sont gratuits.",

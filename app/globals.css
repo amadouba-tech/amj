@@ -518,7 +518,8 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
   max-width: none;
 }
 .audience-detail .page-intro,
-.audience-detail .page-intro .lead {
+.audience-detail .page-intro .lead,
+.audience-detail .subtitle {
   max-width: none;
 }
 .feather-list { display: flex; flex-direction: column; gap: 9px; margin-top: 12px; }

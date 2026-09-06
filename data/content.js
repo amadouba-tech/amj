@@ -17,6 +17,13 @@ export const NAV_ITEMS = [
   { id: "contact", label: "Contact", path: "/contact" },
 ];
 
+export const CONTACT_DIRECT = {
+  name: "Marie-José Sabard",
+  phone: "06 62 43 31 82",
+  phoneHref: "tel:+33662433182",
+  email: "mjosabard@gmail.com",
+};
+
 export const AUDIENCES = [
   {
     id: "particuliers",
@@ -74,7 +81,7 @@ export const TARIFS_PRIX = [
   "Rédaction ou correction des pièces de dossiers pour professionnels : 40\u00A0€ de l\u2019heure",
   "Documents de communication, outils de promotion du secteur culturel : 40\u00A0€ de l\u2019heure, ramené à un forfait de 25\u00A0€ pour les documents simples",
   "Discours : 20\u00A0€ la page",
-  "Ecrits litt\u00E9raires\u00A0: biographies, r\u00E9cits de vie, portraits de personnes m\u00E9ritantes, monographies\u2026\u00A0: soit \u00E0 l\u2019heure d\u2019entretien factur\u00E9e 120\u00A0\u20AC. Le tarif inclut les enregistrements, la saisie du document, les corrections et la livraison du papier, sur cl\u00E9 USB ou par e-mail.",
+  "Ecrits litt\u00E9raires\u00A0: biographies, r\u00E9cits de vie, portraits de personnes m\u00E9ritantes, monographies\u2026\u00A0: soit \u00E0 l\u2019heure d\u2019entretien factur\u00E9e 120\u00A0\u20AC.||Le tarif inclut les enregistrements, la saisie du document, les corrections et la livraison du papier, sur cl\u00E9 USB ou par e-mail.",
   "Correction simple (orthographe, grammaire, typographie) : 5\u00A0€ / 1 500 signes\u00B9",
   "Correction approfondie, avec mise en page : 7\u00A0€ / 1 500 signes\u00B9",
   "Correction et réécriture : 10\u00A0€ / 1 500 signes\u00B9",
@@ -90,9 +97,7 @@ export const TARIFS_PRECISIONS = [
 ];
 
 export const TARIFS_NOTE =
-  "Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caract\u00E8res Times New Roman 12 ou Calibri 12)";
-
-export const TARIFS_FOOTNOTE = "Espaces comprises.";
+  "1 Espaces comprises. Pour information, une page standard comprend 1 500 signes (espaces comprises, avec une police de caract\u00E8res Times New Roman 12 ou Calibri 12)";
 
 export const FONCTIONNEMENT_PARAGRAPHS = [
   "Toute demande émise par un particulier ou un professionnel nécessite un entretien téléphonique ou en présentiel, afin de définir précisément vos besoins. AMJ Écrivain public adapte ses prestations pour répondre au plus près à la demande formulée. L\u2019entretien et le devis sont gratuits.",
@@ -262,14 +267,7 @@ export const QUI_SUIS_JE_INTRO = {
   paragraphs: [
     "Pendant plus de 25 ans, j\u2019ai développé mes compétences rédactionnelles au sein des collectivités territoriales pour des écrits allant du simple courrier administratif à la note de présentation d\u2019un projet structurant pour demande de subvention européenne, sans oublier les comptes rendus, rapports, argumentaires juridiques et autres documents traités au quotidien.",
     "Par ailleurs, mon investissement dans l\u2019univers associatif et culturel a permis de diversifier mon style d\u2019écriture en m\u2019orientant vers la création de textes pour le spectacle vivant. Je me suis également consacrée à d\u2019autres missions (création d\u2019un dossier de mécénat, statuts associatifs\u2026).",
-    <>
-      Aujourd&rsquo;hui, je souhaite mettre mes compétences rédactionnelles au service des personnes ayant besoin d&rsquo;un
-      accompagnement pour des DEMARCHES ADMINISTRATIVES{" "}
-      <span className="text-highlight">
-        ou la rédaction de <span className="intro-caps">VOS</span> ECRITS PERSONNELS
-      </span>{" "}
-      ou PROFESSIONNELS.
-    </>,
+    "Aujourd\u2019hui, je souhaite mettre mes compétences rédactionnelles au service des personnes ayant besoin d\u2019un accompagnement pour des démarches administratives ou la rédaction de vos écrits personnels ou professionnels.",
   ],
 };
 
@@ -280,7 +278,7 @@ export const FORMATION = [
   {
     text: <><strong>Licence Conception et mise en œuvre de projets culturels</strong>, université d&rsquo;Aix-Marseille</>,
     sub: [
-      <><strong>Mémoire&nbsp;:</strong> <em>Musiques nomades</em>&nbsp;: <span className="text-highlight"><em>tziganes, gitanes et jazz manouche</em></span></>,
+      <><strong>Mémoire&nbsp;:</strong> <em>Musiques nomades</em>&nbsp;: <em>tziganes, gitanes et jazz manouche</em></>,
       <><strong>Stage dans un théâtre</strong> (programmation et communication)</>,
       <><strong>Stage au service culturel / spectacle vivant</strong> d&rsquo;une communauté d&rsquo;agglomération</>,
     ],

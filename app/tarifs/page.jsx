@@ -1,5 +1,5 @@
-import { PageIntro, PrimaryButton, FeatherMark } from "@/components/ui.jsx";
-import { FONCTIONNEMENT_STEPS, TARIFS_INTRO, TARIFS_PRIX, TARIFS_PRECISIONS, TARIFS_NOTE, TARIFS_FOOTNOTE } from "@/data/content.js";
+import { PageIntro, PrimaryButton, FeatherListItem } from "@/components/ui.jsx";
+import { TARIFS_INTRO, TARIFS_PRIX, TARIFS_PRECISIONS, TARIFS_NOTE } from "@/data/content.js";
 
 export const metadata = {
   title: "Tarifs",
@@ -19,10 +19,7 @@ export default function Tarifs() {
 
         <ul className="feather-list tarif-list">
           {TARIFS_PRIX.map((text, i) => (
-            <li key={i}>
-              <FeatherMark size={13} />
-              <span>{text}</span>
-            </li>
+            <FeatherListItem key={i} item={text} />
           ))}
         </ul>
 
@@ -31,22 +28,7 @@ export default function Tarifs() {
         ))}
 
         <p className="tarif-note">{TARIFS_NOTE}</p>
-        <p className="tarif-footnote">
-          <sup>1</sup> {TARIFS_FOOTNOTE}
-        </p>
 
-        <div className="steps-grid">
-          {FONCTIONNEMENT_STEPS.map((step, i) => {
-            const Icon = step.icon;
-            return (
-              <div className="step-card" key={i}>
-                <div className="step-icon"><Icon size={20} strokeWidth={1.6} /></div>
-                <h3>{step.title}</h3>
-                <p>{step.text}</p>
-              </div>
-            );
-          })}
-        </div>
         <div className="cta-inline">
           <PrimaryButton href="/contact">Demander mon devis gratuit</PrimaryButton>
         </div>

@@ -21,13 +21,13 @@ export default function QuiSuisJe() {
               ))}
             </div>
           </PageIntro>
-          <div className="portrait-panel">
+          <div className="portrait-panel portrait-panel-sm">
             <Image
               src={IMAGES.quiSuisJePortrait}
               alt="Portrait de Marie-José Sabard, écrivain public"
               fill
               priority
-              sizes="(max-width: 860px) 100vw, 380px"
+              sizes="(max-width: 860px) 80vw, 280px"
             />
           </div>
         </div>

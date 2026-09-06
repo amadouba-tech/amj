@@ -115,10 +115,10 @@ export default function Accueil() {
       <section className="section cta-banner">
         <div className="section-inner">
           <h2>
-            Une idée, un projet d&rsquo;écriture, un document{" "}
-            <span className="cta-highlight">à corriger ou</span> à faire relire&nbsp;?
+            Une idée, un projet d&rsquo;écriture, un
+            <br />
+            document à corriger ou à faire relire&nbsp;?
           </h2>
-          <p>Parlons-en. L&rsquo;entretien et le devis sont toujours gratuits, et sans engagement.</p>
           <PrimaryButton href="/contact">Me contacter</PrimaryButton>
         </div>
       </section>

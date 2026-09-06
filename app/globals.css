@@ -45,7 +45,6 @@ main p,
   .info-row span,
   .placeholder-card p,
   .tarif-note,
-  .tarif-footnote,
   .tarif-precision
 ) {
   text-align: justify;
@@ -338,6 +337,16 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
   box-shadow: 0 8px 28px rgba(47, 47, 47, 0.08);
 }
 .portrait-panel img { object-fit: cover; object-position: center 18%; }
+.portrait-panel-sm {
+  max-width: min(100%, 300px);
+  margin-inline: auto;
+}
+@media (min-width: 860px) {
+  .two-col .portrait-panel-sm {
+    max-width: 260px;
+    justify-self: center;
+  }
+}
 
 /* ---------- event-style hero (photo + content, façon paris.fr) ---------- */
 .event-hero {
@@ -405,7 +414,6 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
   font-weight: 600;
   line-height: 1.3;
 }
-.cta-highlight { color: var(--terracotta); }
 @media (min-width: 720px) { .steps-grid { grid-template-columns: repeat(3, 1fr); } }
 .step-card {
   background: var(--blanc-casse); border: 1px solid var(--gris-colore); border-radius: 18px;
@@ -509,6 +517,10 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .audience-detail .feather-list {
   max-width: none;
 }
+.audience-detail .page-intro,
+.audience-detail .page-intro .lead {
+  max-width: none;
+}
 .feather-list { display: flex; flex-direction: column; gap: 9px; margin-top: 12px; }
 .feather-list li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.94rem; }
 .feather-list.nested { margin-top: 8px; margin-left: 4px; }
@@ -518,12 +530,8 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .tarif-precision { max-width: none; }
 .tarif-intro-legal { max-width: none; }
 .tarif-note {
-  max-width: none; font-size: 0.82rem; color: var(--bleu-gris); margin-top: 20px; margin-bottom: 0; font-style: italic;
+  max-width: none; font-size: 0.82rem; color: var(--bleu-gris); margin-top: 20px; margin-bottom: 36px; font-style: italic;
 }
-.tarif-footnote {
-  max-width: none; font-size: 0.82rem; color: var(--bleu-gris); margin-top: 6px; margin-bottom: 36px;
-}
-.tarif-footnote sup { font-size: 0.72em; }
 .tarif-note sup { font-size: 0.72em; }
 
 .sub-audience { margin-top: 40px; padding-top: 36px; border-top: 1px solid var(--gris-colore); }
@@ -562,6 +570,20 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
   background: var(--blanc-casse); border: 1px solid var(--gris-colore); border-radius: 20px; padding: 30px;
 }
 .contact-form-wrap h2 { font-size: 1.3rem; }
+.contact-direct {
+  margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--gris-colore);
+  display: flex; flex-direction: column; gap: 10px;
+}
+.contact-direct-name {
+  font-family: var(--font-cormorant), serif; font-size: 1.25rem; font-weight: 500;
+  color: var(--encre); margin-bottom: 4px;
+}
+.contact-direct-link {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 0.94rem; color: var(--encre); text-decoration: none;
+}
+.contact-direct-link:hover { color: var(--terracotta); }
+.contact-direct-link svg { color: var(--terracotta); flex-shrink: 0; }
 
 /* ---------- info sidebar (encart infos pratiques, façon paris.fr) ---------- */
 .info-sidebar {

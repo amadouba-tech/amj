@@ -17,8 +17,8 @@ export default function PrestationsProfessionnels() {
   return (
     <AudienceDetailShell
       eyebrow="Publics concernés — Professionnels et secteur culturel"
-      title="Prestations pour autres professionnels et structures culturelles"
-      lead="Professions libérales, entreprises, artistes et structures culturelles&nbsp;: deux univers, un même souci de qualité pour vos écrits."
+      title={<>Prestations pour autres professionnels et structures&nbsp;culturelles</>}
+      lead="Professions libérales, entreprises, artistes et structures&nbsp;culturelles&nbsp;: deux&nbsp;univers, un même souci de qualité pour vos écrits."
       accent="bleuGris"
     >
       <div className="sub-audience">

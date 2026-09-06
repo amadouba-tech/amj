@@ -22,6 +22,15 @@ export const CONTACT_DIRECT = {
   phone: "06 62 43 31 82",
   phoneHref: "tel:+33662433182",
   email: "mjosabard@gmail.com",
+  whatsapp: "0662433182",
+  whatsappHref: "https://wa.me/33662433182",
+};
+
+export const WHATSAPP_POPUP = {
+  title: "Écrivez-moi sur WhatsApp",
+  intro: "Une question rapide\u00A0? Envoyez-moi un message sur WhatsApp, je vous réponds dès que possible.",
+  cta: "Ouvrir WhatsApp",
+  ariaLabel: "Contacter sur WhatsApp",
 };
 
 export const AUDIENCES = [

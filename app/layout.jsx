@@ -2,6 +2,7 @@ import { Cormorant_Garamond, Jost } from "next/font/google";
 import Header from "@/components/Header.jsx";
 import Footer from "@/components/Footer.jsx";
 import PromoBanner from "@/components/PromoBanner.jsx";
+import WhatsAppWidget from "@/components/WhatsAppWidget.jsx";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -44,6 +45,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main>{children}</main>
         <Footer />
+        <WhatsAppWidget />
       </body>
     </html>
   );

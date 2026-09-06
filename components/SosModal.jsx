@@ -52,7 +52,6 @@ export default function SosModal({ open, onClose }) {
             <LifeBuoy size={28} strokeWidth={1.6} />
           </div>
           <div>
-            <p className="sos-modal-eyebrow">SOS Écriture</p>
             <h2 id="sos-modal-title">{SOS_CONTENT.title}</h2>
             {SOS_CONTENT.intro && (
               <p className="sos-modal-intro">{SOS_CONTENT.intro}</p>

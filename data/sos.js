@@ -1,5 +1,5 @@
 export const SOS_CONTENT = {
-  title: "Alerte SOS écriture",
+  title: "SOS écriture",
   items: [
     {
       situation:

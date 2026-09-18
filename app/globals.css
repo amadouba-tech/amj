@@ -402,6 +402,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .promo-banner-close:hover { opacity: 1; }
 
 /* ---------- fonctionnement steps ---------- */
+.fonctionnement-intro .paragraph { max-width: none; }
 .steps-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 8px; }
 .steps-grid.compact { margin-top: 24px; }
 .home-charte { margin-top: 48px; padding-top: 40px; border-top: 1px solid var(--gris-colore); }
@@ -530,6 +531,7 @@ h4 { font-size: 1.05rem; margin-bottom: 6px; }
 .tarif-list li { align-items: flex-start; }
 .tarif-precision { max-width: none; }
 .tarif-intro-legal { max-width: none; }
+.tarif-intro-lead { max-width: none; }
 .tarif-note {
   max-width: none; font-size: 0.82rem; color: var(--bleu-gris); margin-top: 20px; margin-bottom: 36px; font-style: italic;
 }

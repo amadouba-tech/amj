@@ -40,9 +40,11 @@ export default function Accueil() {
         <div className="section-inner">
           <Eyebrow>Fonctionnement</Eyebrow>
           <h2>Simple, souple, sans engagement</h2>
-          {FONCTIONNEMENT_PARAGRAPHS.map((p, i) => (
-            <p key={i} className="paragraph">{p}</p>
-          ))}
+          <div className="fonctionnement-intro">
+            {FONCTIONNEMENT_PARAGRAPHS.map((p, i) => (
+              <p key={i} className="paragraph">{p}</p>
+            ))}
+          </div>
           <div className="steps-grid">
             {FONCTIONNEMENT_STEPS.map((step, i) => {
               const Icon = step.icon;

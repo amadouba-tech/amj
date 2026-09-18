@@ -15,7 +15,11 @@ export default function Tarifs() {
           title="Un devis gratuit, sur mesure"
         />
         <p className="paragraph tarif-intro-legal">{TARIFS_INTRO[0]}</p>
-        <p className="paragraph">{TARIFS_INTRO[1]}</p>
+        <p className="paragraph tarif-intro-lead">
+          {TARIFS_INTRO[1].split("||").map((part, i) => (
+            <span key={i}>{i > 0 && <br />}{part}</span>
+          ))}
+        </p>
 
         <ul className="feather-list tarif-list">
           {TARIFS_PRIX.map((text, i) => (

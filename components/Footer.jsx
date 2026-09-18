@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="footer-audience-tags">
               {AUDIENCES.map((a) => (
                 <Link key={a.id} href={a.path} className={`footer-tag accent-${a.accent}`}>
-                  {a.label.split(",")[0].split("&")[0].trim()}
+                  {a.footerLabel ?? a.label.split(",")[0].split("&")[0].trim()}
                 </Link>
               ))}
             </div>

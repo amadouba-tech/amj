@@ -45,6 +45,7 @@ export const AUDIENCES = [
   {
     id: "associations",
     label: "Associations, structures d\u2019hébergement et collectivités",
+    footerLabel: "Associations et collectivités",
     tagline: "Pour l\u2019accompagnement de vos publics et le fonctionnement de votre institution.",
     accent: "mauve",
     icon: Building2,
@@ -79,8 +80,8 @@ export const FONCTIONNEMENT_STEPS = [
 ];
 
 export const TARIFS_INTRO = [
-  "Exer\u00E7ant mon activit\u00E9 d\u2019\u00E9crivain public dans le cadre juridique d\u2019une auto-entreprise, mes tarifs et factures sont \u00E9tablis hors TVA, non applicable en vertu de l\u2019article 293\u00A0B du CGI (Code g\u00E9n\u00E9ral des imp\u00F4ts).",
-  "Chaque demande est diff\u00E9rente, chaque tarif l\u2019est donc aussi. Plut\u00F4t qu\u2019une grille fig\u00E9e, je pr\u00E9f\u00E8re prendre le temps de comprendre votre besoin avant de vous proposer un prix juste et transparent.",
+  "Exer\u00E7ant mon activit\u00E9 d\u2019\u00E9crivain public dans le cadre juridique d\u2019une micro-entreprise, mes tarifs et factures sont \u00E9tablis hors TVA, non applicable en vertu de l\u2019article 293\u00A0B du CGI (Code g\u00E9n\u00E9ral des imp\u00F4ts).",
+  "Chaque demande est diff\u00E9rente, chaque tarif l\u2019est donc aussi.||Plut\u00F4t qu\u2019une grille fig\u00E9e, je pr\u00E9f\u00E8re prendre le temps de comprendre votre besoin avant de vous proposer un prix juste et transparent.",
 ];
 
 export const TARIFS_PRIX = [
@@ -159,8 +160,7 @@ export const PARTICULIERS = {
     {
       icon: Mail,
       title: "Des lettres de toutes sortes",
-      text: "Bien que le courriel s\u2019impose de manière récurrente, nul n\u2019est à l\u2019abri de devoir rédiger une lettre pour revendiquer ses droits, pour des raisons professionnelles, pour exprimer ses convictions, ses sentiments, ou simplement communiquer avec un être cher. Je vous aide à ",
-      textHighlight: "rédiger.",
+      text: "Bien que le courriel s\u2019impose de manière récurrente, nul n\u2019est à l\u2019abri de devoir rédiger une lettre pour revendiquer ses droits, pour des raisons professionnelles, pour exprimer ses convictions, ses sentiments, ou simplement communiquer avec un être cher. Je vous aide à rédiger.",
       items: [
         "Lettres administratives ou à de hautes personnalités,",
         "Lettres de réclamation,",
@@ -225,7 +225,7 @@ export const ASSOCIATIONS = {
       text: "La rédaction de vos documents dans les règles de l\u2019art peut paraître fastidieuse, et le temps manque souvent pour un travail rédactionnel minutieux, sur le fond comme sur la forme. Pourtant, vos écrits reflètent l\u2019image de votre institution. C\u2019est le moment de faire appel à un écrivain public pour les valoriser\u00A0:",
       items: [
         "Travaux de secrétariat",
-        "Écrits professionnels\u00A0: comptes rendus, rapports, résumés de conférences,||notes de présentation d\u2019un projet, montage de dossiers de subventions",
+        "Écrits professionnels\u00A0: comptes rendus, rapports, résumés de conférences, notes de présentation d\u2019un projet, montage de dossiers de subventions",
         "Documents de communication, livret d\u2019accueil pour les nouveaux arrivants ou les résidents",
         "Monographie d\u2019une commune, d\u2019un lieu-dit, d\u2019un élément de patrimoine, d\u2019une association, d\u2019une institution",
       ],
@@ -243,7 +243,7 @@ export const PROFESSIONNELS = {
     ],
     items: [
       "Travaux de secrétariat",
-      "Écrits professionnels\u00A0: comptes rendus, rapports, résumés de conférences,||notes de présentation d\u2019un projet, montage de dossiers de subventions (liste non exhaustive)",
+      "Écrits professionnels\u00A0: comptes rendus, rapports, résumés de conférences, notes de présentation d\u2019un projet, montage de dossiers de subventions (liste non exhaustive)",
       "Documents de communication",
       "Monographie de la société",
     ],

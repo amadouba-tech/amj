@@ -73,7 +73,7 @@ export default function Prestations() {
                       src={service.image}
                       alt={service.imageAlt}
                       fill
-                      sizes="(max-width: 860px) 280px, 220px"
+                      sizes="(max-width: 860px) 100vw, 320px"
                     />
                   </div>
                 )}

@@ -42,7 +42,11 @@ export default function Accueil() {
           <h2>Simple, souple, sans engagement</h2>
           <div className="fonctionnement-intro">
             {FONCTIONNEMENT_PARAGRAPHS.map((p, i) => (
-              <p key={i} className="paragraph">{p}</p>
+              <p key={i} className="paragraph">
+                {p.split("||").map((part, j) => (
+                  <span key={j}>{j > 0 && <br />}{part}</span>
+                ))}
+              </p>
             ))}
           </div>
           <div className="steps-grid">

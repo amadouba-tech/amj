@@ -131,7 +131,13 @@ export function PageIntro({ eyebrow, title, lead, children }) {
     <div className="page-intro">
       {eyebrow && <Eyebrow>{eyebrow}</Eyebrow>}
       <h1>{title}</h1>
-      {lead && <p className="lead">{lead}</p>}
+      {lead && (
+        <p className="lead">
+          {lead.split("||").map((part, i) => (
+            <span key={i}>{i > 0 && <br />}{part}</span>
+          ))}
+        </p>
+      )}
       {children}
     </div>
   );

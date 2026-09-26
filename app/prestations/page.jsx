@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Eyebrow, PageIntro, AudienceCard, FeatherMark } from "@/components/ui.jsx";
+import { PageIntro, AudienceCard, FeatherMark } from "@/components/ui.jsx";
 import { AUDIENCES } from "@/data/content.js";
 import { IMAGES } from "@/data/images.js";
 
@@ -39,7 +39,7 @@ export default function Prestations() {
           <PageIntro
             eyebrow="Des prestations pour vous"
             title="Des prestations pour tous publics"
-            lead="Pour alléger la lecture, les prestations sont détaillées par public. Cliquez sur votre profil pour découvrir les services qui vous concernent."
+            lead="Pour alléger la lecture, les prestations sont détaillées par public.||Cliquez sur votre profil pour découvrir les services qui vous concernent."
           />
           <div className="audience-grid">
             {AUDIENCES.map((a) => <AudienceCard key={a.id} audience={a} />)}
@@ -52,7 +52,6 @@ export default function Prestations() {
 
       <section className="section alt">
         <div className="section-inner">
-          <Eyebrow>Des prestations pour vous</Eyebrow>
           <h2>Des services gradués, sur mesure, en fonction de vos besoins</h2>
 
           <div className="prestation-services">
@@ -74,7 +73,7 @@ export default function Prestations() {
                       src={service.image}
                       alt={service.imageAlt}
                       fill
-                      sizes="(max-width: 860px) 100vw, 420px"
+                      sizes="(max-width: 860px) 280px, 220px"
                     />
                   </div>
                 )}
